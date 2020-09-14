@@ -36,20 +36,19 @@
     background-color: black;
     opacity: 0.5;
     z-index: 1;
+    
   }
   
-  /*
-  *
-  * ==========================================
-  * FOR DEMO PURPOSES
-  * ==========================================
-  *
-  */
+  .videoCaption{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder !important;
+
+}
   
   code {
     padding: 0 0.15rem;
     border-radius: 0.2rem;
-    width: 100px;
+    width: 100vh;
   }
 
  

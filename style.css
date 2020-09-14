@@ -36,17 +36,15 @@
   z-index: 1;
 }
 
-/*
-  *
-  * ==========================================
-  * FOR DEMO PURPOSES
-  * ==========================================
-  *
-  */
+.videoCaption {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bolder !important;
+}
+
 code {
   padding: 0 0.15rem;
   border-radius: 0.2rem;
-  width: 100px;
+  width: 100vh;
 }
 
 body {
@@ -58,15 +56,29 @@ header {
   padding: 0 !important;
 }
 
-.navbar {
+header .navbar {
   position: absolute;
   top: 0px;
   left: 1vh;
   width: 100%;
 }
 
-.fa {
+header .navbar .fa {
   color: white;
-  font-weight: 10vh;
+}
+
+.videoCaption {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bolder !important;
+}
+
+.btnTop {
+  margin: 10vh 0 5vh 0;
+}
+
+.btnIndex a {
+  width: 50vh;
+  font-size: 4vh;
+  font-family: 'Oswald', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
