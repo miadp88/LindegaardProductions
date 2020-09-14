@@ -59,17 +59,43 @@ header {
 header .navbar {
   position: absolute;
   top: 0px;
-  left: 1vh;
   width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 header .navbar .fa {
   color: white;
 }
 
-.videoCaption {
-  font-family: 'Oswald', sans-serif;
-  font-weight: bolder !important;
+.navbar-collapse {
+  background: black;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  height: 100vh;
+}
+
+.navbar-collapse a {
+  text-align: center;
+  font-size: 5vh;
+  margin-top: 4vh;
+}
+
+.navbar {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar .container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.logocontainer img {
+  margin: 0 2vh;
 }
 
 .btnTop {
