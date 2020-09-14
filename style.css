@@ -61,6 +61,12 @@ header {
 .navbar {
   position: absolute;
   top: 0px;
+  left: 1vh;
   width: 100%;
+}
+
+.fa {
+  color: white;
+  font-weight: 10vh;
 }
 /*# sourceMappingURL=style.css.map */
