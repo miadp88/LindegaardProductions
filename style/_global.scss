@@ -25,10 +25,10 @@ header{
     width: 100%;
     margin-left: 0;
     margin-right: 0;
-    height: 100vh;
+    
     a{
         text-align: center;
-        font-size: 5vh;
+        font-size: 2vh;
         margin-top: 4vh;
     }
 }
@@ -44,9 +44,53 @@ header{
     }
 }
 
-.logocontainer{
-    img{
-        margin: 
-       0 2vh;
+.navbar-brand {
+    margin: 4vh;
+    .container-sm{
+        margin: 4vh;
+    background-color: red;
+    a{
+        margin: 2vh 2vh;
+    }}}
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .navbar-collapse 
+{ background:transparent;
+    margin-left: none;
+    margin-right: none;
+    
+    a{
+        text-align:right;
+        font-size: 3vh;
+        margin-top: 0;
+        margin-right: 2vh;
+        color: rgba(255, 255, 255, 0.459);
+        width: 100%;
     }
+    
 }
+
+
+header{
+    padding: 0 !important;
+    .navbar{
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        background-color: rgba(0, 0, 0, 0.767);
+        .fa{
+            color: white;
+        
+        }
+        
+    }
+    
+}
+
+   
+ }

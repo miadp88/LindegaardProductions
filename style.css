@@ -73,7 +73,6 @@ header .navbar .fa {
   width: 100%;
   margin-left: 0;
   margin-right: 0;
-  height: 100vh;
 }
 
 .navbar-collapse a {
@@ -96,6 +95,39 @@ header .navbar .fa {
 
 .logocontainer img {
   margin: 0 2vh;
+}
+
+@media (min-width: 576px) {
+  .navbar-collapse {
+    background: transparent;
+    margin-left: none;
+    margin-right: none;
+  }
+  .navbar-collapse a {
+    text-align: right;
+    font-size: 3vh;
+    margin-top: 0;
+    margin-right: 2vh;
+    color: rgba(255, 255, 255, 0.459);
+    width: 100%;
+  }
+  header {
+    padding: 0 !important;
+  }
+  header .navbar {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: rgba(0, 0, 0, 0.767);
+  }
+  header .navbar .fa {
+    color: white;
+  }
+  header img {
+    left: 0;
+  }
 }
 
 .btnTop {
