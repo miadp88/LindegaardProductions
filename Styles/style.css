@@ -19,6 +19,7 @@ body {
   letter-spacing: 1.8vw;
   line-height: 0;
   text-align: center;
+  margin-left: 2vw;
 }
 
 .landing .hero .caption h3 {
@@ -29,18 +30,38 @@ body {
   font-weight: bolder;
 }
 
+@media screen and (min-width: 600px) {
+  .landing .hero .caption h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 10vw;
+    text-align: center;
+  }
+  .landing .hero .caption h2 {
+    font-size: 8vw;
+    letter-spacing: 1.8vw;
+  }
+  .landing .hero .caption h3 {
+    color: #8BC53F;
+    line-height: 15vw;
+    font-size: 3.2vw;
+    text-align: center;
+    font-weight: bolder;
+  }
+}
+
 .btn-landing {
   background-color: #8bc53f54;
   color: white;
   text-transform: capitalize;
   text-decoration: none;
-  font-size: 3rem;
+  font-size: 6vw;
   border: 2px solid #8BC53F;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   border-radius: 5px;
   margin: 0 20px;
   padding: 5px 30px;
+  min-width: 40vw;
 }
 
 .btn-landing:hover {
@@ -63,6 +84,29 @@ body {
   float: left;
 }
 
+/* If screen size is more than 600px wide, set the font-size of <div> to 80px */
+@media screen and (min-width: 600px) {
+  .btn-landing {
+    background-color: #8bc53f54;
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 3vw;
+    border: 2px solid #8BC53F;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 5px;
+    margin: 0 20px;
+    padding: 5px 30px;
+    min-width: 20vw;
+  }
+  .btn-landing:hover {
+    background-color: #8BC53F;
+    color: white;
+  }
+}
+
+/* If screen size is 600px wide, or less, set the font-size of <div> to 30px */
 nav.navbar {
   margin: 0;
   padding: 0;
