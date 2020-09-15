@@ -54,14 +54,30 @@ body {
   color: white;
   text-transform: capitalize;
   text-decoration: none;
-  font-size: 6vw;
+  font-size: 5.3vw;
   border: 2px solid #8BC53F;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   border-radius: 5px;
-  margin: 0 20px;
-  padding: 5px 30px;
-  min-width: 40vw;
+  margin: 0 15px;
+}
+
+.btn-landing img {
+  width: 13vw;
+  height: 13vw;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-landing .fa-sliders-h {
+  width: 13vw;
+  height: 15vw;
+  margin: auto;
+  padding-top: 5vw;
+}
+
+.btn-landing .fa-sliders-h .fa {
+  font-weight: 1000;
 }
 
 .btn-landing:hover {
@@ -69,6 +85,7 @@ body {
   color: white;
 }
 
+.lgCaption
 .btn-readmore {
   background: none;
   border: none;
@@ -85,20 +102,15 @@ body {
 }
 
 /* If screen size is more than 600px wide, set the font-size of <div> to 80px */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 750px) {
   .btn-landing {
-    background-color: #8bc53f54;
-    color: white;
-    text-transform: capitalize;
-    text-decoration: none;
-    font-size: 3vw;
-    border: 2px solid #8BC53F;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    border-radius: 5px;
-    margin: 0 20px;
-    padding: 5px 30px;
     min-width: 20vw;
+    line-height: 3.5vw;
+    padding: 3vw 3vw 4vw 3vw;
+    font-size: 3.5vw;
+    max-width: 300px;
+    max-height: 40px;
+    line-height: 1vw;
   }
   .btn-landing:hover {
     background-color: #8BC53F;
@@ -106,7 +118,23 @@ body {
   }
 }
 
-/* If screen size is 600px wide, or less, set the font-size of <div> to 30px */
+/* If screen size is more than 600px wide, set the font-size of <div> to 80px */
+@media screen and (min-width: 1000px) {
+  .btn-landing {
+    font-size: 3vw;
+    max-width: 20px;
+    max-height: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .btn-landing {
+    font-size: 3vw;
+    max-width: 15px;
+    max-height: 30px;
+  }
+}
+
 nav.navbar {
   margin: 0;
   padding: 0;
