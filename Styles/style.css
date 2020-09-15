@@ -104,10 +104,14 @@ body {
 }
 
 .lgCaption
+.redMorebtn {
+  background-color: white;
+}
+
 .btn-readmore {
   background: none;
   border: none;
-  color: white;
+  color: #a19f9f;
   font-size: 1.2rem;
 }
 
