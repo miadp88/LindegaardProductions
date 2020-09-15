@@ -35,10 +35,13 @@ body {
     font-family: 'Libre Baskerville', serif;
     font-size: 10vw;
     text-align: center;
+    text-shadow: 2px 2px 4px #000000;
   }
   .landing .hero .caption h2 {
     font-size: 8vw;
     letter-spacing: 1.8vw;
+    text-shadow: 2px 2px 4px #000000;
+    line-height: 2vw;
   }
   .landing .hero .caption h3 {
     color: #8BC53F;
@@ -46,6 +49,21 @@ body {
     font-size: 3.2vw;
     text-align: center;
     font-weight: bolder;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .landing .hero .capRegular h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 6vw;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  .landing .hero .capRegular h2 {
+    font-size: 4vw;
+    letter-spacing: 1.8vw;
+    text-shadow: 2px 2px 4px #000000;
+    line-height: 2vw;
   }
 }
 
@@ -101,7 +119,6 @@ body {
   float: left;
 }
 
-/* If screen size is more than 600px wide, set the font-size of <div> to 80px */
 @media screen and (min-width: 750px) {
   .btn-landing {
     min-width: 20vw;
@@ -118,7 +135,6 @@ body {
   }
 }
 
-/* If screen size is more than 600px wide, set the font-size of <div> to 80px */
 @media screen and (min-width: 1000px) {
   .btn-landing {
     font-size: 3vw;
@@ -145,6 +161,11 @@ nav.navbar {
   right: 0;
 }
 
+nav.navbar .navbar-brand {
+  width: 5vw;
+  margin-left: 3vh;
+}
+
 nav.navbar ul.navbar-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -168,11 +189,24 @@ nav.navbar ul.navbar-nav li.nav-item a.nav-link {
   transition: all 0.5s;
   padding: 5px 20px;
   margin: 0;
+  font-size: 2vw;
 }
 
 nav.navbar ul.navbar-nav li.nav-item a.nav-link.active, nav.navbar ul.navbar-nav li.nav-item a.nav-link:hover {
   background-color: #8BC53F;
   border: 2px solid #8BC53F;
+}
+
+@media screen and (min-width: 750px) {
+  nav.navbar .navbar-brand {
+    width: 3.5vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  nav.navbar .navbar-brand {
+    width: 2.5vw;
+  }
 }
 
 .card-animated {
