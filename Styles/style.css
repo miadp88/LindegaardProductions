@@ -7,6 +7,28 @@ body {
   padding: 40px;
 }
 
+.landing .hero .caption h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 12vw;
+  text-align: center;
+}
+
+.landing .hero .caption h2 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 10vw;
+  letter-spacing: 1.8vw;
+  line-height: 0;
+  text-align: center;
+}
+
+.landing .hero .caption h3 {
+  color: #8BC53F;
+  line-height: 20vw;
+  font-size: 6.2vw;
+  text-align: center;
+  font-weight: bolder;
+}
+
 .btn-landing {
   background-color: #8bc53f54;
   color: white;
