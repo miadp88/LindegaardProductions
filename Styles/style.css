@@ -238,6 +238,7 @@ nav.navbar ul.navbar-nav li.nav-item a.nav-link.active, nav.navbar ul.navbar-nav
   opacity: 0;
   -webkit-animation: LineFadeIn .8s .8s forwards ease-in;
           animation: LineFadeIn .8s .8s forwards ease-in;
+  margin-top: 5vw;
 }
 
 .card-animated__image {
@@ -245,20 +246,26 @@ nav.navbar ul.navbar-nav li.nav-item a.nav-link.active, nav.navbar ul.navbar-nav
   -webkit-animation: ImageFadeIn .8s 1.4s forwards;
           animation: ImageFadeIn .8s 1.4s forwards;
   max-width: 100%;
+  position: absolute;
+  z-index: 0;
+  height: 60%;
 }
 
 .card-animated__title {
   color: white;
-  margin-top: 0;
+  margin-top: 10vw;
   font-weight: 800;
   letter-spacing: 0.01em;
+  font-size: 3vh;
 }
 
 .card-animated__content {
-  margin-top: -10rem;
   opacity: 0;
   -webkit-animation: ContentFadeIn .8s 1.6s forwards;
           animation: ContentFadeIn .8s 1.6s forwards;
+  position: absolute;
+  z-index: 5000;
+  margin-top: 50px;
 }
 
 .card-animated__svg {
@@ -370,6 +377,91 @@ nav.navbar ul.navbar-nav li.nav-item a.nav-link.active, nav.navbar ul.navbar-nav
     opacity: 1;
     -webkit-filter: blur(0);
             filter: blur(0);
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .card-animated__image {
+    border: red solid 1px;
+    height: 55%;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .card-animated__image {
+    border: blue solid 1px;
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .card-animated__image {
+    border: yellow solid 1px;
+    height: 48%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .card-animated__image {
+    border: yellow solid 1px;
+    height: 75%;
+  }
+}
+
+@media screen and (max-width: 862px) {
+  .card-animated__image {
+    border: white solid 1px;
+    height: 68%;
+  }
+}
+
+@media screen and (max-width: 753px) {
+  .card-animated__image {
+    border: white solid 1px;
+    height: 120vw;
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 657px) {
+  .card-animated__image {
+    border: blue solid 1px;
+    height: 90%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card-animated__image {
+    border: red solid 1px;
+    height: 80%;
+  }
+}
+
+@media screen and (max-width: 508px) {
+  .card-animated__image {
+    border: yellow solid 1px;
+    height: 71%;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .card-animated__image {
+    border: greenyellow solid 1px;
+    height: 64%;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .card-animated__image {
+    border: red solid 1px;
+    height: 58%;
+  }
+}
+
+@media screen and (max-width: 343px) {
+  .card-animated__image {
+    border: blueviolet solid 1px;
+    height: 53%;
   }
 }
 
