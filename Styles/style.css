@@ -9,17 +9,19 @@ body {
 
 .landing .hero .caption h1 {
   font-family: 'Libre Baskerville', serif;
-  font-size: 12vw;
+  font-size: 8vw;
   text-align: center;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .landing .hero .caption h2 {
   font-family: 'Libre Baskerville', serif;
-  font-size: 10vw;
+  font-size: 6vw;
   letter-spacing: 1.8vw;
   line-height: 0;
   text-align: center;
   margin-left: 2vw;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .landing .hero .caption h3 {
