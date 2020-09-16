@@ -54,9 +54,42 @@
     }
 }
 
+@media screen and (max-width: 890px) {
+    .card-animated {
+        .btn-readmore{
+            font-size: 2.5vh;
+            font-weight: bolder;
+        }
+    }
+}
 
+@media screen and (max-width: 570px) {
+    .card-animated {
+        
+        .btn-readmore{
+            font-size: 2.5vh;
+            font-weight: bolder;
+            padding-top: 0;
+           
 
+        }
+        
+    }
+}
 
+@media screen and (max-width: 890px) {
+    .card-animated {
+        
+        .btn-readmore{
+            font-size: 2.5vh;
+            font-weight: bolder;
+            padding-top: 0;
+           
+
+        }
+        
+    }
+}
 
 
 @media screen and (min-width: 750px) {

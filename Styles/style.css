@@ -125,6 +125,29 @@ body {
   float: left;
 }
 
+@media screen and (max-width: 890px) {
+  .card-animated .btn-readmore {
+    font-size: 2.5vh;
+    font-weight: bolder;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .card-animated .btn-readmore {
+    font-size: 2.5vh;
+    font-weight: bolder;
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .card-animated .btn-readmore {
+    font-size: 2.5vh;
+    font-weight: bolder;
+    padding-top: 0;
+  }
+}
+
 @media screen and (min-width: 750px) {
   .btn-landing {
     min-width: 20vw;
@@ -382,42 +405,65 @@ nav.navbar ul.navbar-nav li.nav-item a.nav-link.active, nav.navbar ul.navbar-nav
 
 @media screen and (max-width: 1350px) {
   .card-animated__image {
-    border: red solid 1px;
     height: 55%;
   }
 }
 
 @media screen and (max-width: 1230px) {
   .card-animated__image {
-    border: blue solid 1px;
-    height: 50%;
+    height: 52%;
+  }
+  .card-animated__content {
+    margin-top: 7vh;
+    margin-left: -1.8vh;
+  }
+  .card-animated__content p {
+    font-size: 1.8vh;
   }
 }
 
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 1135px) {
   .card-animated__image {
-    border: yellow solid 1px;
     height: 48%;
   }
 }
 
 @media screen and (max-width: 990px) {
   .card-animated__image {
-    border: yellow solid 1px;
     height: 75%;
+  }
+  .card-animated__content {
+    margin-top: 7vh;
   }
 }
 
-@media screen and (max-width: 862px) {
+@media screen and (max-width: 900px) {
   .card-animated__image {
-    border: white solid 1px;
+    height: 74%;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .card-animated__image {
+    border: red solid 1px;
     height: 68%;
+  }
+  .card-animated__content {
+    margin-top: 4vh;
+  }
+}
+
+@media screen and (max-width: 767.5px) {
+  .card-animated__image {
+    border: pink solid 1px;
+    height: 100%;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 753px) {
   .card-animated__image {
-    border: white solid 1px;
+    border: yellow solid 1px;
     height: 120vw;
     width: 100vw;
   }
@@ -426,13 +472,13 @@ nav.navbar ul.navbar-nav li.nav-item a.nav-link.active, nav.navbar ul.navbar-nav
 @media screen and (max-width: 657px) {
   .card-animated__image {
     border: blue solid 1px;
-    height: 90%;
+    height: 87%;
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 570px) {
   .card-animated__image {
-    border: red solid 1px;
+    border: blue solid 1px;
     height: 80%;
   }
 }
@@ -447,21 +493,70 @@ nav.navbar ul.navbar-nav li.nav-item a.nav-link.active, nav.navbar ul.navbar-nav
 @media screen and (max-width: 448px) {
   .card-animated__image {
     border: greenyellow solid 1px;
-    height: 64%;
+    height: 100%;
   }
 }
 
 @media screen and (max-width: 395px) {
   .card-animated__image {
     border: red solid 1px;
-    height: 58%;
+    height: 100%;
   }
 }
 
 @media screen and (max-width: 343px) {
   .card-animated__image {
     border: blueviolet solid 1px;
-    height: 53%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .card-animated__title {
+    font-size: 2.5vh;
+    color: red;
+    margin-top: 13vw;
+  }
+  .card-animated__content {
+    font-size: 1.5vh;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .card-animated__title {
+    font-size: 4vh;
+    color: blue;
+    margin-top: 21vw;
+  }
+  .card-animated__content {
+    font-size: 2vh;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .card-animated__svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+  }
+  .card-animated__title {
+    font-size: 3vh;
+    color: blue;
+    margin-top: 220px;
+  }
+  .card-animated__content {
+    font-size: 2vh;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .card-animated p {
+    margin-bottom: 0;
+    font-size: 1.8vh;
+  }
+  .card-animated__title {
+    margin-top: 29vh;
   }
 }
 

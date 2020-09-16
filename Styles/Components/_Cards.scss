@@ -75,7 +75,6 @@
   @media screen and (max-width: 1350px) {
     .card-animated {
     &__image {
-      border: red solid 1px;
       height: 55%;
     }
   }}
@@ -83,15 +82,21 @@
   @media screen and (max-width: 1230px) {
     .card-animated {
     &__image {
-      border: blue solid 1px;
-      height: 50%;
+      height: 52%;
     }
+    &__content {
+      margin-top: 7vh;
+      margin-left: -1.8vh;
+      p{
+        font-size: 1.8vh;
+      }
+    }
+    
   }}
 
-  @media screen and (max-width: 1130px) {
+  @media screen and (max-width: 1135px) {
     .card-animated {
     &__image {
-      border:yellow solid 1px;
       height: 48%;
     }
   }}
@@ -99,25 +104,48 @@
   @media screen and (max-width: 990px) {
     .card-animated {
     &__image {
-      border:yellow solid 1px;
       height: 75%;
+    }
+    &__content{
+      margin-top: 7vh;
+    }
+  }}
+
+  @media screen and (max-width: 900px) {
+    .card-animated {
+    &__image {
+      height: 74%;
     }
   }}
 
 
  
-  @media screen and (max-width: 862px) {
+  @media screen and (max-width: 890px) {
     .card-animated {
     &__image {
-      border:white solid 1px;
-      height: 68%;
+      border:red solid 1px;
+      height:68%;
+      
+    }
+    &__content{
+      margin-top: 4vh;
     }
   }}  
+
+  @media screen and (max-width:767.5px) {
+    .card-animated {
+    &__image {
+      border:pink solid 1px;
+      height:100%;
+      width:100%;
+      
+    }
+  }} 
 
   @media screen and (max-width: 753px) {
     .card-animated {
     &__image {
-      border:white solid 1px;
+      border:yellow solid 1px;
       height:120vw;
       width: 100vw;
     }
@@ -128,14 +156,14 @@
     .card-animated {
     &__image {
       border:blue solid 1px;
-      height: 90%;
+      height: 87%;
     }
   }}  
 
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 570px) {
     .card-animated {
     &__image {
-      border:red solid 1px;
+      border:blue solid 1px;
       height: 80%;
     }
   }} 
@@ -152,7 +180,7 @@
     .card-animated {
     &__image {
       border:greenyellow solid 1px;
-      height: 64%;
+      height: 100%;
     }
   }} 
 
@@ -160,7 +188,7 @@
     .card-animated {
     &__image {
       border:red solid 1px;
-      height: 58%;
+      height: 100%;
     }
   }} 
 
@@ -168,7 +196,63 @@
     .card-animated {
     &__image {
       border:blueviolet solid 1px;
-      height: 53%;
+      height: 100%;
     }
   }} 
  
+  @media screen and (max-width: 1200px) {
+    .card-animated {
+    &__title {
+      font-size: 2.5vh;
+      color: red;
+      margin-top: 13vw;
+    }
+    &__content {
+      font-size: 1.5vh;
+    }
+  }} 
+
+  @media screen and (max-width: 990px) {
+    .card-animated {
+      &__title {
+        font-size: 4vh;
+        color: blue;
+        margin-top: 21vw;
+      }
+      &__content {
+        font-size: 2vh;
+      }
+    }
+  }
+
+  @media screen and (max-width: 890px) {
+    .card-animated {
+      
+      &__svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+      }
+      &__title {
+        font-size: 3vh;
+        color: blue;
+        margin-top: 220px;
+      }
+      &__content {
+        font-size: 2vh;
+      }
+    }
+  }
+ 
+  @media screen and (max-width: 448px) {
+    .card-animated {
+      p {
+        margin-bottom: 0;
+        font-size: 1.8vh;
+      }
+      &__title{
+        margin-top: 29vh;
+      }
+
+  }}
