@@ -1,62 +1,13 @@
-nav.navbar{
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    z-index: 100;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.747);
-    
-    .navbar-brand {
-        width: 5vw;
-        margin-left: 3vh;
-    }
-    
-    ul.navbar-nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width:50%;
-        margin: 0;
-        padding: 0;
-        li.nav-item{
-            a.nav-link{
-                color:white;
-                font-size:2rem;
-                border:2px solid transparent;
-                transition: all 0.5s;
-                padding: 5px 20px;
-                margin: 0;
-                font-size: 2vw;
-                &.active, &:hover{
-                    background-color:#8BC53F;
-                    border:2px solid #8BC53F;
-                }
-            }
+  .navbar{
+    background-color: black;
+    .collapse{
+        
+        .navbar-nav{
+            margin-left: auto;
+            font-size: 3vh;
+            right: 0;
+            
+            
         }
     }
-}
-
-
-
-
-
-
-@media screen and (min-width: 750px) {
-    nav.navbar{
-        .navbar-brand {
-            width: 3.5vw;
-        }
-    }
-}
-  
-
-
-  @media screen and (min-width: 1200px) {
-    nav.navbar{
-        .navbar-brand {
-            width: 2.5vw;
-        }
-    }
-  }
+} 

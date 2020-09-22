@@ -180,63 +180,14 @@ body {
   }
 }
 
-nav.navbar {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 0;
-  z-index: 100;
-  left: 0;
+.navbar {
+  background-color: black;
+}
+
+.navbar .collapse .navbar-nav {
+  margin-left: auto;
+  font-size: 3vh;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.747);
-}
-
-nav.navbar .navbar-brand {
-  width: 5vw;
-  margin-left: 3vh;
-}
-
-nav.navbar ul.navbar-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 50%;
-  margin: 0;
-  padding: 0;
-}
-
-nav.navbar ul.navbar-nav li.nav-item a.nav-link {
-  color: white;
-  font-size: 2rem;
-  border: 2px solid transparent;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  padding: 5px 20px;
-  margin: 0;
-  font-size: 2vw;
-}
-
-nav.navbar ul.navbar-nav li.nav-item a.nav-link.active, nav.navbar ul.navbar-nav li.nav-item a.nav-link:hover {
-  background-color: #8BC53F;
-  border: 2px solid #8BC53F;
-}
-
-@media screen and (min-width: 750px) {
-  nav.navbar .navbar-brand {
-    width: 3.5vw;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  nav.navbar .navbar-brand {
-    width: 2.5vw;
-  }
 }
 
 .card-animated {
