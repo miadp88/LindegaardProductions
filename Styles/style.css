@@ -125,6 +125,35 @@ body {
   float: left;
 }
 
+.btn-contact {
+  background-color: #8bc53f54;
+  color: white;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 5.3vw;
+  border: 2px solid #8BC53F;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 5px;
+  margin: 0 15vh;
+}
+
+.btn-contact .fa-sliders-h {
+  width: 13vw;
+  height: 15vw;
+  margin: auto;
+  padding-top: 5vw;
+}
+
+.btn-contact .fa-sliders-h .fa {
+  font-weight: 1000;
+}
+
+.btn-contact:hover {
+  background-color: #8BC53F;
+  color: white;
+}
+
 @media screen and (max-width: 890px) {
   .card-animated .btn-readmore {
     font-size: 2.5vh;
@@ -178,6 +207,27 @@ body {
     max-width: 15px;
     max-height: 30px;
   }
+  .btn-contact {
+    font-size: 2.5vw;
+    max-width: 15vh;
+    max-height: 25vh;
+  }
+}
+
+@media screen and (min-width: 590px) {
+  .btn-contact {
+    font-size: 2.5vw;
+    max-width: 15vh;
+    max-height: 25vh;
+  }
+}
+
+@media screen and (min-width: 590px) {
+  .btn-contact {
+    font-size: 2.5vw;
+    max-width: 15vh;
+    max-height: 25vh;
+  }
 }
 
 .navbar {
@@ -186,8 +236,22 @@ body {
 
 .navbar .collapse .navbar-nav {
   margin-left: auto;
-  font-size: 3vh;
+  font-size: 2.5vh;
   right: 0;
+}
+
+.contactCard {
+  position: relative;
+  background: #333;
+  width: 100%;
+  height: 450px;
+  border-radius: 6px;
+  padding: 2rem;
+  color: #aaa;
+  -webkit-box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px 0;
 }
 
 .card-animated {
