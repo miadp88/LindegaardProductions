@@ -240,6 +240,13 @@ body {
   right: 0;
 }
 
+@media screen and (max-width: 876px) {
+  .navbar .nav-link {
+    margin: auto;
+    font-size: larger;
+  }
+}
+
 .contactCard {
   position: relative;
   background: #333;
@@ -599,6 +606,30 @@ body {
 .aside-blocks .aside__block-footer {
   background-color: #8BC53F;
   min-height: 1px;
+}
+
+footer .greentext {
+  color: #8BC53F;
+}
+
+footer .whitetxt {
+  color: white;
+}
+
+footer .fa-envelope, footer .fa-phone, footer .fa-home {
+  color: white;
+}
+
+footer p {
+  color: white;
+}
+
+footer .faButtomWrap {
+  border-top: solid 4px #8BC53F;
+}
+
+footer .faButtomWrap .faButtom {
+  color: #8BC53F;
 }
 
 .hero {

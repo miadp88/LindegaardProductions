@@ -11,3 +11,13 @@
         }
     }
 } 
+
+
+@media screen and (max-width: 876px) {
+    .navbar{
+        .nav-link{
+            margin: auto;
+            font-size: larger;     
+        }
+    }
+}

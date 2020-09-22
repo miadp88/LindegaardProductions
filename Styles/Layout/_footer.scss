@@ -1,2 +1,24 @@
 /// <reference path="./Helpers/_mixins" />
 /// <reference path="./Helpers/_vars" />
+
+footer{
+    .greentext{
+        color: $primaryGreen;
+    }
+    .whitetxt{
+        color: white;
+    }
+
+    .fa-envelope, .fa-phone, .fa-home{
+        color: white;
+    }
+
+   p{
+       color: white;
+   }
+   .faButtomWrap{
+       border-top: solid 4px $primaryGreen;
+   .faButtom{
+       color: $primaryGreen;
+   }}
+}
