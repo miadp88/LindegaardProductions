@@ -570,6 +570,10 @@ body {
   }
 }
 
+.card-content {
+  background: #333;
+}
+
 .no-space {
   padding: 0;
   margin: 0;
