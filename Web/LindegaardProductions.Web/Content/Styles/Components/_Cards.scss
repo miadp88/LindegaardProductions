@@ -50,6 +50,7 @@
       position: absolute;
       z-index: 0;
       height: 60%;
+      width:100%;
     }
   
     &__title {
@@ -65,14 +66,14 @@
       animation: ContentFadeIn .8s 1.6s forwards;
       position: absolute;
       z-index: 5000;
-      margin-top: 50px;
+      margin-bottom: 50px;
       
     }
     
     &__svg {
       position: absolute;
       left: 0;
-      top: 115px;
+      top: inherit;
       
     }
 

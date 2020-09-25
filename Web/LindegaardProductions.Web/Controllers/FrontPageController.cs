@@ -16,7 +16,7 @@ namespace LindegaardProductions.Web.Controllers
         public ActionResult Index(Frontpage currentPage)
         {
             var news = currentPage.Children<News>().FirstOrDefault();
-            var newestNews = news.Descendants<Article>().OrderByDescending(x => x.CreateDate).Take(5);
+            var newestNews = news.Descendants<Article>().OrderByDescending(x => x.CreateDate).Take(6);
 
             return View(new FrontPageViewModel()
             {
