@@ -1,0 +1,15 @@
+﻿@model LandingPageViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>Landingpage View</h2>
+
+@foreach (var item in this.Model.RoadMapPages)
+{
+    <a href="@item.Url">
+        @item.Name
+    </a>
+    <br />
+}

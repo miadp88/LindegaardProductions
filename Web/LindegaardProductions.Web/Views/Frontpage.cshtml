@@ -1,0 +1,21 @@
+﻿@model FrontPageViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Frontpage View</h2>
+@Html.Partial("_Navigation", this.Global.NavigationItems)
+@Html.Partial("_Header")
+
+@if (Model.News != null)
+{
+
+    foreach (var item in Model.News)
+    {
+        <div class="card">
+            <h2>@item.Title</h2>
+            <a href="@item.Url">Read More</a>
+        </div>
+    }
+
+}

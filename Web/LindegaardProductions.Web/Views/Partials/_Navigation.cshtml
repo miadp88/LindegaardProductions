@@ -1,0 +1,30 @@
+﻿@model NavigationItemModel
+
+
+
+<h2>Navigation partial View</h2>
+
+<nav>
+    <ul>
+        <li class="nav-item">
+            <a class="nav-link" href="@this.Global.LandingPageLink">
+                LandingPage
+            </a>
+        </li>
+        @foreach (var item in Model.Children)
+        {
+            <li class="nav-item @(item.Active ? "active" : string.Empty)">
+                <a class="nav-link " href="@item.Url">
+                    @item.Name
+                </a>
+            </li>
+        }
+        <li class="nav-item">
+            <a class="nav-link" href="@this.Global.CurrentFrontpageLink">
+                Current Frontpage
+            </a>
+        </li>
+    </ul>
+</nav>
+@*@this.Global.CurrentFrontpageLink*@
+@*@this.Global.LandingPageLink*@

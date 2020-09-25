@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    @*<script async src="https://cmp.osano.com/gH5iRqPQfA1zvW/036ab6df-8d47-400f-baa9-39f170a932e5/osano.js"></script>*@
+    @Html.Partial("_Analytics")
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @Html.Partial("_Seo", this.Global.Seo)
+    @Html.Partial("_Favicon")
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
+
+    @*@Styles.Render("~/bundles/materialCss")*@
+</head>
+<body>
+    <h1>Shared View</h1>
+    @RenderBody()
+
+    @*@Scripts.Render("~/bundles/materialJs")*@
+</body>
+</html>
