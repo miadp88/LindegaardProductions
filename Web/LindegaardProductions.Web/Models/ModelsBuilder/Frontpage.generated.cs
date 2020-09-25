@@ -52,6 +52,13 @@ namespace LindegaardProductions.Web.Models.ModelsBuilder
 		public global::System.Collections.Generic.IEnumerable<global::Umbraco.Core.Models.PublishedContent.IPublishedContent> Gallery => this.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Core.Models.PublishedContent.IPublishedContent>>("gallery");
 
 		///<summary>
+		/// Page Icon: Add an icon from fontawesome For exampel: {i class="fas fa-music"}{/i}
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.4")]
+		[ImplementPropertyType("pageIcon")]
+		public string PageIcon => this.Value<string>("pageIcon");
+
+		///<summary>
 		/// Sound files
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.4")]

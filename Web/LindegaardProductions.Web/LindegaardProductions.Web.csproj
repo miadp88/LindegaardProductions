@@ -333,6 +333,12 @@
     <Content Include="Content\Media\musicianIcon.svg" />
     <Content Include="Content\Media\musicianSmallIcon.svg" />
     <Content Include="Content\Media\placeholder.jpg" />
+    <Content Include="Content\Styles\style.css">
+      <DependentUpon>style.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\style.min.css">
+      <DependentUpon>style.css</DependentUpon>
+    </Content>
     <Content Include="Global.asax" />
     <Content Include="Scripts\Core\jquery-3.5.1.js" />
     <Content Include="Scripts\Core\jquery.min.js" />
@@ -436,6 +442,10 @@
     <Content Include="Content\Styles\Layout\_hero.scss" />
     <Content Include="Content\Styles\Modules\_list.scss" />
     <Content Include="Content\Styles\style.scss" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
