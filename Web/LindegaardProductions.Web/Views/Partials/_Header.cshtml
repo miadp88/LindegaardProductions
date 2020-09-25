@@ -1,16 +1,22 @@
-﻿
-<h2>Header partial View</h2>
+﻿<div class="row no-space">
+    <div class="col-12 landing no-space">
+        <div class="hero">
+            @if (this.Global.Header.Video != null)
+            {
+                <video loop poster muted autoplay preload="auto">
+                    <source src="@this.Global.Header.Video.Url" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
 
-<h1>
-    @this.Global.Header.Title
-</h1>
-<h2>
-    @this.Global.Header.SubHeading
-</h2>
-
-@if (this.Global.Header.Video != null)
-{
-    <pre>
-        @this.Global.Header.Video.Name
-    </pre>
-}
+            }
+            <div class="caption capRegular">
+                <h1 class="font-weight-bold">
+                    @this.Global.Header.Title
+                </h1>
+                <h2>
+                    @this.Global.Header.SubHeading
+                </h2>
+            </div>
+        </div>
+    </div>
+</div>

@@ -132,7 +132,7 @@ namespace LindegaardProductions.Web.Business.Helpers
                 children = currentPage.Children;
 
                 navChildren = NavigationItemMapper.Map<NavigationItemModel>(children, currentPage, umbracoHelper);
-                navigation = new NavigationItemModel() { Children = navChildren, Url = home.Url, Name = home.Title };
+                navigation = new NavigationItemModel() { Children = navChildren, Url = currentPage.Url, Name = currentPage.Name, Active = true };
             }
             else if(currentPage is LandingPage)
             {
@@ -140,10 +140,11 @@ namespace LindegaardProductions.Web.Business.Helpers
             }
             else
             {
-                children = currentPage.AncestorsOrSelf<Frontpage>().FirstOrDefault().Children;
+                var frontPage = currentPage.AncestorsOrSelf<Frontpage>().FirstOrDefault();
+                children = frontPage.Children;
 
                 navChildren = NavigationItemMapper.Map<NavigationItemModel>(children, currentPage, umbracoHelper);
-                navigation = new NavigationItemModel() { Children = navChildren, Url = home.Url, Name = home.Title };
+                navigation = new NavigationItemModel() { Children = navChildren, Url = frontPage.Url, Name = frontPage.Title };
             }
 
             return navigation;

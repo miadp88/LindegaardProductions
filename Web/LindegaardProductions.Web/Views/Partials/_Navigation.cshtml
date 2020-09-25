@@ -2,29 +2,20 @@
 
 
 
-<h2>Navigation partial View</h2>
-
-<nav>
-    <ul>
-        <li class="nav-item">
-            <a class="nav-link" href="@this.Global.LandingPageLink">
-                LandingPage
-            </a>
-        </li>
-        @foreach (var item in Model.Children)
-        {
-            <li class="nav-item @(item.Active ? "active" : string.Empty)">
-                <a class="nav-link " href="@item.Url">
-                    @item.Name
-                </a>
-            </li>
-        }
-        <li class="nav-item">
-            <a class="nav-link" href="@this.Global.CurrentFrontpageLink">
-                Current Frontpage
-            </a>
-        </li>
-    </ul>
+<nav class="navbar navbar-expand-md navbar-dark">
+    <a class="navbar-brand" href="@this.Global.LandingPageLink">
+        <img src="~/Content/Media/headerLogo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+    </a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarCollapse">
+        <div class="navbar-nav ">
+            @foreach (var link in Model.Children)
+            {
+                <a href="@link.Url" class="nav-item nav-link @(link.Active ? "active" : string.Empty)">@link.Name</a>
+            }
+            <a href="@Model.Url" class="nav-item nav-link @(Model.Active ? "active" : string.Empty)">@Model.Name</a>
+        </div>
+    </div>
 </nav>
-@*@this.Global.CurrentFrontpageLink*@
-@*@this.Global.LandingPageLink*@

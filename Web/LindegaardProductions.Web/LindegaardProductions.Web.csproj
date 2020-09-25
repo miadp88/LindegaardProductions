@@ -340,11 +340,7 @@
       <DependentUpon>style.css</DependentUpon>
     </Content>
     <Content Include="Global.asax" />
-    <Content Include="Scripts\Core\jquery-3.5.1.js" />
-    <Content Include="Scripts\Core\jquery.min.js" />
-    <Content Include="Scripts\Core\jquery.unobtrusive-ajax.js" />
-    <Content Include="Scripts\Core\jquery.validate.min.js" />
-    <Content Include="Scripts\Core\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\Custom\animation.js" />
     <Content Include="Scripts\Plugins\jquery.validate.min.js" />
     <Content Include="Scripts\Plugins\sweetalert2.all.min.js" />
     <Content Include="Web.config" />
