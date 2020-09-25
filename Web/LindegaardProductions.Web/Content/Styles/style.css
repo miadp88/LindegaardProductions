@@ -442,7 +442,8 @@
   margin: 0; }
 
 .aside-blocks {
-  background-color: #2A2727; }
+  background-color: #2A2727;
+  overflow: hidden; }
   .aside-blocks .aside__block-title {
     background-color: black;
     border-top: 2px solid #8BC53F;
@@ -477,6 +478,11 @@ footer .whitetxt {
 
 footer .fa-envelope, footer .fa-phone, footer .fa-home {
   color: white; }
+
+footer .footer-copyright p {
+  display: inline-block; }
+  footer .footer-copyright p.greentext {
+    color: #8BC53F; }
 
 footer p {
   color: white; }

@@ -35,9 +35,21 @@ namespace LindegaardProductions.Web.Business.Helpers
                 ListenBlock = GetListenBlock(currentPage, umbracoHelper),
                 GalleryBlock = GetGalleryBlock(currentPage, umbracoHelper),
                 NewestArticlesBlock = GetNewestArticles(currentPage, umbracoHelper),
+                Footer = GetFooter(landingPage),
             };
 
             return model;
+        }
+
+        private static FooterModel GetFooter(LandingPage landingPage)
+        {
+            return new FooterModel()
+            {
+                Links = landingPage.FooterLinks,
+                About = landingPage.AboutMe,
+                ContactInfo = landingPage.ContactInfo,
+                SoMe = landingPage.SocialMediaIcons,
+            };
         }
 
         private static IEnumerable<TeaserPageModel> GetNewestArticles(IPublishedContent currentPage, UmbracoHelper umbracoHelper)

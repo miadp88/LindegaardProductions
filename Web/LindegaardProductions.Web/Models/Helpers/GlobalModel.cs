@@ -18,5 +18,6 @@ namespace LindegaardProductions.Web.Models.Helpers
         public IEnumerable<IPublishedContent> ListenBlock { get; internal set; }
         public IEnumerable<Image> GalleryBlock { get; internal set; }
         public IEnumerable<TeaserPageModel> NewestArticlesBlock { get; internal set; }
+        public FooterModel Footer { get; internal set; }
     }
 }

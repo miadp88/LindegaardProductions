@@ -1,24 +1,37 @@
 /// <reference path="./Helpers/_mixins" />
 /// <reference path="./Helpers/_vars" />
 
-footer{
-    .greentext{
+footer {
+    .greentext {
         color: $primaryGreen;
     }
-    .whitetxt{
+
+    .whitetxt {
         color: white;
     }
 
-    .fa-envelope, .fa-phone, .fa-home{
+    .fa-envelope, .fa-phone, .fa-home {
         color: white;
     }
 
-   p{
-       color: white;
-   }
-   .faButtomWrap{
-       border-top: solid 4px $primaryGreen;
-   .faButtom{
-       color: $primaryGreen;
-   }}
+    .footer-copyright {
+        p {
+            display: inline-block;
+            &.greentext {
+                color: $primaryGreen;
+            }
+        }
+    }
+
+    p {
+        color: white;
+    }
+
+    .faButtomWrap {
+        border-top: solid 4px $primaryGreen;
+
+        .faButtom {
+            color: $primaryGreen;
+        }
+    }
 }

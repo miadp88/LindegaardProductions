@@ -329,6 +329,7 @@
     <Content Include="config\Lang\sv-SE.user.xml" />
     <Content Include="config\Lang\zh-CN.user.xml" />
     <Content Include="config\logviewer.searches.config.js" />
+    <Content Include="Content\Media\fullLogo.png" />
     <Content Include="Content\Media\headerLogo.svg" />
     <Content Include="Content\Media\musicianIcon.svg" />
     <Content Include="Content\Media\musicianSmallIcon.svg" />
@@ -372,6 +373,7 @@
     <Compile Include="Controllers\Surface\ContactSurfaceController.cs" />
     <Compile Include="Controllers\TextPageController.cs" />
     <Compile Include="Controllers\YearController.cs" />
+    <Compile Include="Models\Helpers\FooterModel.cs" />
     <Compile Include="Models\Helpers\GlobalModel.cs" />
     <Compile Include="Models\Helpers\HeaderModel.cs" />
     <Compile Include="Models\Helpers\NavigationItemModel.cs" />
@@ -467,6 +469,7 @@
     <Content Include="Views\Partials\_Navigation.cshtml" />
     <Content Include="Views\Partials\_Aside.cshtml" />
     <Content Include="Views\Partials\_Analytics.cshtml" />
+    <Content Include="Views\Partials\_Footer.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
