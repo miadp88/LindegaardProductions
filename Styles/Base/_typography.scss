@@ -1,6 +1,7 @@
 @import '../Helpers/mixins';
 @import '../Helpers/vars';
 
+
 .landing{
     .hero{
         .caption{
@@ -61,6 +62,10 @@
                     }
                 
                 }}
+        }
+
+        .abouttextcontainer{
+            color: rgba(255, 255, 255, 0.87);
         }
 
 

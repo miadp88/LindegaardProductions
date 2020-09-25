@@ -55,6 +55,10 @@ body {
   }
 }
 
+.abouttextcontainer {
+  color: rgba(255, 255, 255, 0.87);
+}
+
 @media screen and (min-width: 1200px) {
   .landing .hero .capRegular h1 {
     font-family: 'Libre Baskerville', serif;
@@ -366,6 +370,37 @@ body {
 }
 
 .news .newscard .card-body a {
+  background-color: transparent;
+  color: white;
+  text-transform: capitalize;
+  text-decoration: none;
+  border: 2px solid #8BC53F;
+}
+
+.textcard {
+  -webkit-box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+  background-color: none;
+  background-clip: border-box;
+  border: none;
+  border-radius: none;
+}
+
+.textcard .card-body {
+  background-color: #353131;
+  padding: 0;
+  padding: 1vh;
+}
+
+.textcard .card-body .card-title {
+  color: white;
+}
+
+.textcard .card-body .card-text {
+  color: rgba(255, 255, 255, 0.562);
+}
+
+.textcard .card-body a {
   background-color: transparent;
   color: white;
   text-transform: capitalize;
@@ -734,4 +769,4 @@ footer .faButtomWrap .faButtom {
       -ms-flex-pack: center;
           justify-content: center;
 }
-/*# sourceMappingURL=Style.css.map */
+/*# sourceMappingURL=style.css.map */
