@@ -1,24 +1,28 @@
-.contactCard{
-  position: relative;
-  background: #333;
-  width: 100%;
-  height: 450px;
-  border-radius: 6px;
-  padding: 2rem;
-  color: #aaa;
-  box-shadow: 0 .25rem .25rem rgba(0,0,0,0.2),
-    0 0 1rem rgba(0,0,0,0.2);
-  overflow: hidden;
-  margin: 20px 0;
-}
+.contactContainer{
+  z-index: 5;
+  padding-top: 18vh;
+  .contactCard{
+    position: relative;
+    background: rgba(51, 51, 51, 0.349);
+    
+    width: 100%;
+    height: 450px;
+    border-radius: 6px;
+    padding: 2rem;
+    color: #aaa;
+    box-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.5),
+      0 0 1rem rgba(0,0,0,0.2);
+    overflow: hidden;
+    margin: 20px 0;
+    
+  }}
 
 
 .card-animated {
     position: relative;
-    background: #333;
+    background: #353131;
     width: 100%;
     height: 450px;
-    border-radius: 6px;
     padding: 2rem;
     color: #aaa;
     box-shadow: 0 .25rem .25rem rgba(0,0,0,0.2),
@@ -66,8 +70,39 @@
       position: absolute;
       left: 0;
       top: 115px;
+      
     }
+
+   
   }
+ 
+
+  .news{
+  .newscard{
+    box-shadow: 0 .25rem .25rem rgba(0,0,0,0.2),
+      0 0 1rem rgba(0,0,0,0.2);
+    background-color: none; 
+    background-clip: border-box; 
+    border: none; 
+    border-radius: none;
+  .card-body{
+    background-color: #353131;
+    padding: 0;
+    padding: 1vh;
+    .card-title{
+      color: white;
+    }
+    .card-text{
+      color: rgba(255, 255, 255, 0.562);
+    }
+    a{
+      background-color:transparent;
+      color:white;
+      text-transform: capitalize;
+      text-decoration: none;
+      border:2px solid #8BC53F;
+  }
+  }}}
   
   @keyframes LineFadeIn {
     0% { opacity: 0; d: path("M 0 300 Q 0 300 0 300 Q 0 300 0 300 C 0 300 0 300 0 300 Q 0 300 0 300 "); stroke: #fff; }
