@@ -341,6 +341,7 @@
     </Content>
     <Content Include="Global.asax" />
     <Content Include="Scripts\Custom\animation.js" />
+    <Content Include="Scripts\Custom\audioPlayer.js" />
     <Content Include="Scripts\Plugins\jquery.validate.min.js" />
     <Content Include="Scripts\Plugins\sweetalert2.all.min.js" />
     <Content Include="Web.config" />

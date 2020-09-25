@@ -1,34 +1,46 @@
 /// <reference path="./Helpers/_mixins" />
 /// <reference path="./Helpers/_vars" />
 
-.aside-blocks{
-    background-color:#2A2727;
+.aside-blocks {
+    background-color: #2A2727;
 
-    .aside__block{
-        &-title{
-            background-color:black;
-            border-top:2px solid #8BC53F;
-            padding:5px;
-            h3{
-                color:#8BC53F;
+    .aside__block {
+        &-title {
+            background-color: black;
+            border-top: 2px solid #8BC53F;
+            padding: 5px;
+
+            h3 {
+                color: #8BC53F;
                 text-align: center;
             }
         }
-        &-content{
-            ul{
+
+        &-content {
+            margin:20px;
+            ul {
                 list-style: none;
-                li{
+                margin-bottom:40px;
+                li {
                     list-style: none;
-                    margin:15px 0;
-                    a{
-                        color:white;
+                    margin: 15px 0;
+                    color: white;
+                    cursor:pointer;
+                    span {
+                        margin-right: 10px;
                     }
                 }
             }
+
+            .simple-player {
+                margin-top: 25px;
+                margin-left: 40px;
+            }
         }
-        &-footer{
-            background-color:#8BC53F;
-            min-height:1px;
+
+        &-footer {
+            background-color: #8BC53F;
+            min-height: 1px;
         }
     }
 }

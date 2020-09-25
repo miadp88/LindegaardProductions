@@ -450,13 +450,21 @@
     .aside-blocks .aside__block-title h3 {
       color: #8BC53F;
       text-align: center; }
-  .aside-blocks .aside__block-content ul {
-    list-style: none; }
-    .aside-blocks .aside__block-content ul li {
+  .aside-blocks .aside__block-content {
+    margin: 20px; }
+    .aside-blocks .aside__block-content ul {
       list-style: none;
-      margin: 15px 0; }
-      .aside-blocks .aside__block-content ul li a {
-        color: white; }
+      margin-bottom: 40px; }
+      .aside-blocks .aside__block-content ul li {
+        list-style: none;
+        margin: 15px 0;
+        color: white;
+        cursor: pointer; }
+        .aside-blocks .aside__block-content ul li span {
+          margin-right: 10px; }
+    .aside-blocks .aside__block-content .simple-player {
+      margin-top: 25px;
+      margin-left: 40px; }
   .aside-blocks .aside__block-footer {
     background-color: #8BC53F;
     min-height: 1px; }
