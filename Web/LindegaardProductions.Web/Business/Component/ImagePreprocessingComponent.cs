@@ -47,7 +47,7 @@ namespace LindegaardProductions.Web.Business.Component
                 {
                     //Make sure it's an image.
                     string cropInfo = media.GetValue<string>("umbracoFile");
-                    if (!cropInfo.EndsWith(".pdf") && !cropInfo.EndsWith(".mp4"))
+                    if (!cropInfo.EndsWith(".pdf") && !cropInfo.EndsWith(".mp4") && !cropInfo.EndsWith(".mp3"))
                     {
                         string path = JsonConvert.DeserializeObject<ImageCropperValue>(cropInfo).Src;
                         string extension = Path.GetExtension(path).Substring(1);
