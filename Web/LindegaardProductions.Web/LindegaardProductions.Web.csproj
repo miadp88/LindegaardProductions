@@ -329,6 +329,9 @@
     <Content Include="config\Lang\sv-SE.user.xml" />
     <Content Include="config\Lang\zh-CN.user.xml" />
     <Content Include="config\logviewer.searches.config.js" />
+    <Content Include="Content\Media\headerLogo.svg" />
+    <Content Include="Content\Media\musicianIcon.svg" />
+    <Content Include="Content\Media\musicianSmallIcon.svg" />
     <Content Include="Content\Media\placeholder.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\Core\jquery-3.5.1.js" />
@@ -416,6 +419,23 @@
     <Content Include="App_Plugins\uSync8\addons.json" />
     <Content Include="App_Plugins\Our.Umbraco.Matryoshka\package.manifest" />
     <Content Include="App_Plugins\Our.Umbraco.TheDashboard\package.manifest" />
+    <Content Include="Content\Styles\Base\_bootstrap-overwrites.scss" />
+    <Content Include="Content\Styles\Base\_global.scss" />
+    <Content Include="Content\Styles\Base\_typography.scss" />
+    <Content Include="Content\Styles\Components\_buttons.scss" />
+    <Content Include="Content\Styles\Components\_Cards.scss" />
+    <Content Include="Content\Styles\Components\_forms.scss" />
+    <Content Include="Content\Styles\Components\_icons.scss" />
+    <Content Include="Content\Styles\Components\_nav.scss" />
+    <Content Include="Content\Styles\Helpers\_helping-classes.scss" />
+    <Content Include="Content\Styles\Helpers\_mixins.scss" />
+    <Content Include="Content\Styles\Helpers\_vars.scss" />
+    <Content Include="Content\Styles\Layout\_articles.scss" />
+    <Content Include="Content\Styles\Layout\_aside.scss" />
+    <Content Include="Content\Styles\Layout\_footer.scss" />
+    <Content Include="Content\Styles\Layout\_hero.scss" />
+    <Content Include="Content\Styles\Modules\_list.scss" />
+    <Content Include="Content\Styles\style.scss" />
     <None Include="packages.config" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
@@ -450,9 +470,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content\Styles\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
