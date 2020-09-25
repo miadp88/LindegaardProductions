@@ -1,0 +1,23 @@
+  .navbar{
+    background-color: black;
+    .collapse{
+        
+        .navbar-nav{
+            margin-left: auto;
+            font-size: 2.5vh;
+            right: 0;
+            
+            
+        }
+    }
+} 
+
+
+@media screen and (max-width: 876px) {
+    .navbar{
+        .nav-link{
+            margin: auto;
+            font-size: larger;     
+        }
+    }
+}
