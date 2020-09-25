@@ -1,12 +1,12 @@
 .contactContainer{
   z-index: 5;
-  padding-top: 18vh;
+  padding-top: 12vh;
   .contactCard{
     position: relative;
-    background: rgba(51, 51, 51, 0.349);
+    background: rgba(0, 0, 0, 0.288);
     
     width: 100%;
-    height: 450px;
+    height: 550px;
     border-radius: 6px;
     padding: 2rem;
     color: #aaa;
@@ -14,6 +14,9 @@
       0 0 1rem rgba(0,0,0,0.2);
     overflow: hidden;
     margin: 20px 0;
+    textarea{
+      height: 20vh;
+    }
     
   }}
 

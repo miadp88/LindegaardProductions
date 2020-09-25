@@ -51,6 +51,7 @@ body {
     font-size: 3.2vw;
     text-align: center;
     font-weight: bolder;
+    text-shadow: 1px 2px 8px black;
   }
 }
 
@@ -136,6 +137,8 @@ body {
   transition: 0.5s;
   border-radius: 5px;
   margin: 0 15vh;
+  -webkit-box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.363), 0 0 1rem rgba(0, 0, 0, 0.562);
+          box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.363), 0 0 1rem rgba(0, 0, 0, 0.562);
 }
 
 .btn-contact .fa-sliders-h {
@@ -230,6 +233,18 @@ body {
   }
 }
 
+@media screen and (max-width: 575px) {
+  .btn-contact {
+    border: 2px solid transparent;
+  }
+  .btn-contact .fa {
+    font-weight: 1000;
+    color: #8BC53F;
+    font-size: 6vh;
+    text-shadow: 1px 2px 8px black;
+  }
+}
+
 .navbar {
   background-color: black;
 }
@@ -249,14 +264,14 @@ body {
 
 .contactContainer {
   z-index: 5;
-  padding-top: 18vh;
+  padding-top: 12vh;
 }
 
 .contactContainer .contactCard {
   position: relative;
-  background: rgba(51, 51, 51, 0.349);
+  background: rgba(0, 0, 0, 0.288);
   width: 100%;
-  height: 450px;
+  height: 550px;
   border-radius: 6px;
   padding: 2rem;
   color: #aaa;
@@ -264,6 +279,10 @@ body {
           box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.5), 0 0 1rem rgba(0, 0, 0, 0.2);
   overflow: hidden;
   margin: 20px 0;
+}
+
+.contactContainer .contactCard textarea {
+  height: 20vh;
 }
 
 .card-animated {

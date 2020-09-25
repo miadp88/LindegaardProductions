@@ -67,6 +67,8 @@
     transition: 0.5s;
     border-radius: 5px;
     margin: 0 15vh;
+    box-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.363),
+      0 0 1rem rgba(0, 0, 0, 0.562);
     .fa-sliders-h{
         width: 13vw;
         height: 15vw;
@@ -182,3 +184,16 @@
         max-width: 15vh;
         max-height: 25vh;}
   }
+
+  @media screen and (max-width: 575px) {
+  .btn-contact{
+    border:2px solid transparent;
+    
+    .fa{
+        font-weight: 1000;
+        color: #8BC53F;
+        font-size: 6vh;
+        text-shadow: 1px 2px 8px rgb(0, 0, 0);
+    }}}
+    
+   
