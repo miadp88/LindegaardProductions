@@ -11,4 +11,6 @@
     } else {
         x.className = "topnav";
     }
+
+    AOS.init();
 });

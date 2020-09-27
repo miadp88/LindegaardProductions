@@ -44,10 +44,10 @@
                             char[] split = { ' ' };
                             var words = this.Global.Header.Title.Split(split);
                         }
-                        <h1 class="font-weight-bold aniview" data-av-animation="slideInRight">
+                        <h1 class="font-weight-bold" data-aos="flip-up" data-aos-duration="2000">
                             @words[0]
                         </h1>
-                        <h2>@words[1]</h2>
+                        <h2 data-aos="flip-up" data-aos-duration="2000">@words[1]</h2>
 
                         <h3>@this.Global.Header.SubHeading</h3>
 
