@@ -21,6 +21,8 @@
 
   <link rel="icon" href="./images/headerLogo.svg" type="image/png" sizes="16x16">
 
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <title>Contact</title>
 </head>
 
@@ -52,8 +54,8 @@
             <source src="Media/Video/movieProducerContact.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
-          <div class="container-fluid col-lg-8 col-md-10 col-sm-12 contactContainer">
-    
+          <div class="container-fluid col-lg-8 col-md-10 col-sm-12 contactContainer" data-aos="zoom-in" data-aos-duration="1500">
+            <h1 class="contactMe text-center contactMe text-white">Contact me</h1>
             <div class="col-12">
               <div class="card card-animated contactCard">
                 <form class="contactWrapper">
@@ -221,6 +223,11 @@
                 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
                   integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
                   crossorigin="anonymous"></script>
+
+                  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                  <script>
+                    AOS.init();
+                  </script>
               </body>
               
               </html>      
