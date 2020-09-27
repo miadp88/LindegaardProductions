@@ -1,0 +1,52 @@
+﻿@model FooterModel
+
+<footer class="page-footer font-small ">
+    <div style="background-color: #8BC53F;">
+        <div class="container">
+        </div>
+    </div>
+
+    <div class="container text-center text-md-left mt-5">
+        <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <img src="~/Content/Media/fullLogo.png" width="100" height="100" class="d-inline-block align-top mb-2" alt="">
+                <p class="whitetxt mb-2">
+                    @Model.About
+                </p>
+            </div>
+            @foreach (var links in Model.Links)
+            {
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 whitetext">
+                    <h6 class="text-uppercase font-weight-bold whitetxt">@links.Title</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    @foreach (var link in links.Links)
+                    {
+                        <p>
+                            <a class="greentext" href="@link.Url">@link.Name</a>
+                        </p>
+                    }
+                </div>
+            }
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <h6 class="text-uppercase font-weight-bold whitetxt">Contact</h6><!--TODO: Dictionary-->
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                @foreach (var info in Model.ContactInfo)
+                {
+                    <p>
+                        @Html.Raw(info.Type) @info.Value
+                    </p>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 text-center text-md-center faButtomWrap">
+
+    </div>
+    <div class="footer-copyright text-center py-3 whitetxt">
+        <p>© 2020 Copyright:</p>
+        <a class="greentext" href="#"> Front-end: Mia Larsen,   </a>
+        <a class="greentext" href="https://mychimpingsource.dk/">Back-end: André Lange,</a>
+        <a class="greentext" href="#">Quality control: Carina Vessel</a>
+        <p class="greentext">All Rigths reserved</p>
+    </div>
+</footer>

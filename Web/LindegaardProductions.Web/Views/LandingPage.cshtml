@@ -1,0 +1,95 @@
+﻿@model LandingPageViewModel
+@{
+    Layout = null;
+}
+<!doctype html>
+<html lang="en">
+<head>
+    @*<script async src="https://cmp.osano.com/gH5iRqPQfA1zvW/036ab6df-8d47-400f-baa9-39f170a932e5/osano.js"></script>*@
+    @Html.Partial("_Analytics")
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    @Html.Partial("_Seo", this.Global.Seo)
+    @Html.Partial("_Favicon")
+
+    <!--Recaptcha-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <!--Font Awesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!--Custom Style-->
+    <link rel="stylesheet" href="~/Content/Styles/style.min.css">
+</head>
+<body>
+    <div class="container-fluid no-space">
+        <div class="row no-space">
+            <div class="col-12 landing no-space">
+                <div class="hero">
+                    <video loop poster muted autoplay preload="auto">
+                        <source src="@this.Global.Header.Video.Url" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="caption">
+                        @{
+                            char[] split = { ' ' };
+                            var words = this.Global.Header.Title.Split(split);
+                        }
+                        <h1 class="font-weight-bold" data-aos="flip-up" data-aos-duration="2000">
+                            @words[0]
+                        </h1>
+                        <h2 data-aos="flip-up" data-aos-duration="2000">@words[1]</h2>
+
+                        <h3>@this.Global.Header.SubHeading</h3>
+
+                        <div class="btn-list">
+                            @foreach (var item in this.Model.RoadMapPages)
+                            {
+                                <a href="@item.Url" class="btn btn-landing">
+                                    <span class="d-none d-sm-block">@item.Name</span>
+                                    <span class="d-sm-none">@Html.Raw(item.PageIcon)</span>
+                                </a>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajax-unobtrusive/3.2.6/jquery.unobtrusive-ajax.min.js"
+            integrity="sha384-hpW2z+6vt5klZGNoKgrK+fGNDXlKaaJTq0+GMJNW2RstoJI9gyy8vpNl7rOH8MLF"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"
+            integrity="sha384-cs1D9mYtA60FIcsT1T7+pERF8l9Ynz6WMFXyrBFkf2ewKQnOOprsRwo4sC+Kacmi"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"
+            integrity="sha384-R3vNCHsZ+A2Lo3d5A6XNP7fdQkeswQWTIPfiYwSpEP3YV079R+93YzTeZRah7f/F"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"
+            integrity="sha384-ZGo5k5ISlEzWLoXyt+lnvKt9j03Z7GkxXh14zLqVy098XJhcdKHjL8pQYVMI8WiH"
+            crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/jquery-aniview/dist/jquery.aniview.js"></script>
+    <script src="~/Scripts/Custom/animation.js"></script>
+</body>
+</html>

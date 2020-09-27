@@ -21,11 +21,14 @@
 
   <link rel="icon" href="./images/headerLogo.svg" type="image/png" sizes="16x16">
 
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <title>FrontPage</title>
 </head>
 
 <body>
   <div class="container-fluid no-space topnav " id="myTopnav">
+  <!--nav-->
     <nav class="navbar navbar-expand-md navbar-dark">
       <a class="navbar-brand" href="./LandingPage.html">
         <img src="./images/headerLogo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -33,18 +36,17 @@
       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
           <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse " id="navbarCollapse">
           <div class="navbar-nav ">
               <a href="./About.html" class="nav-item nav-link ">About</a>
               <a href="./News.html" class="nav-item nav-link ">News</a>
               <a href="./Contact.html" class="nav-item nav-link ">Contact</a>
               <a href="./FrontPage.html" class="nav-item nav-link active ">Home</a>
-              
           </div>
-          
       </div>
   </nav>
+  <!--nav-->
+  <!--Hero-->
     <div class="row no-space">
       <div class="col-12 landing no-space">
         <div class="hero">
@@ -53,10 +55,10 @@
             Your browser does not support the video tag.
           </video>
           <div class="caption capRegular">
-            <h1 class="font-weight-bold">
+            <h1 class="font-weight-bold" data-aos="flip-up" data-aos-duration="2000">
                 LINDEGAARD
             </h1>
-            <h2>
+            <h2 data-aos="flip-up" data-aos-duration="2000">
                 PRODUCTION
             </h2>
 
@@ -64,7 +66,9 @@
         </div>
       </div>
     </div>
+  <!--Hero-->
   </div>
+
   <div class="container-fluid">
     <div class="row">
       <div class="col-12">
@@ -72,7 +76,7 @@
           <div class="row">
             <div class="col-lg-8 col-sm-12">
               <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in" data-aos-duration="1500">
                   <div class="card card-animated">
                     <div class="card-animated__content">
                       <h1 class="card-animated__title">Lorem ipsum</h1>
@@ -96,7 +100,7 @@
                     
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 cardHome">
+                <div class="col-lg-4 col-md-6 col-sm-12 cardHome" data-aos="zoom-in" data-aos-duration="1500"> 
                   <div class="card card-animated">
                     <div class="card-animated__image-container">
                       <img class="card-animated__image"
@@ -119,7 +123,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12"  data-aos="zoom-in" data-aos-duration="1500">
                   <div class="card card-animated">
                     <div class="card-animated__image-container">
                       <img class="card-animated__image"
@@ -142,7 +146,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12"  data-aos="zoom-in" data-aos-duration="1500">
                   <div class="card card-animated">
                     <div class="card-animated__image-container">
                       <img class="card-animated__image"
@@ -165,7 +169,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12"  data-aos="zoom-in" data-aos-duration="1500">
                   <div class="card card-animated">
                     <div class="card-animated__image-container">
                       <img class="card-animated__image"
@@ -188,7 +192,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12"  data-aos="zoom-in" data-aos-duration="1500">
                   <div class="card card-animated">
                     <div class="card-animated__image-container">
                       <img class="card-animated__image"
@@ -211,7 +215,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12"  data-aos="zoom-in" data-aos-duration="1500">
                   <div class="card card-animated">
                     <div class="card-animated__image-container">
                       <img class="card-animated__image"
@@ -234,7 +238,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12"  data-aos="zoom-in" data-aos-duration="1500">
                   <div class="card card-animated">
                     <div class="card-animated__image-container">
                       <img class="card-animated__image"
@@ -257,7 +261,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in" data-aos-duration="1500">
                   <div class="card card-animated">
                     <div class="card-animated__image-container">
                       <img class="card-animated__image"
@@ -505,6 +509,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>      
