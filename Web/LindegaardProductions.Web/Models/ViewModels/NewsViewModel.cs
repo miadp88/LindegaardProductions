@@ -11,5 +11,7 @@ namespace LindegaardProductions.Web.Models.ViewModels
     {
         public News CurrentPage { get; internal set; }
         public IEnumerable<Article> Children { get; internal set; }
+        public IEnumerable<string> YearsAvailable { get; internal set; }
+        public int ActiveYear { get; internal set; }
     }
 }

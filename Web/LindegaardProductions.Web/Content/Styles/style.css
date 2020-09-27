@@ -64,6 +64,16 @@
 .section-title {
   color: white; }
 
+.btn-primary {
+  background-color: transparent;
+  color: #fff;
+  text-transform: capitalize;
+  text-decoration: none;
+  border: 2px solid #8bc53f; }
+  .btn-primary:hover {
+    background-color: #8bc53f;
+    border: 2px solid #8bc53f; }
+
 .btn-landing {
   background-color: rgba(0, 0, 0, 0.486);
   color: white;
@@ -633,3 +643,13 @@ footer .faButtomWrap {
 
 .umb-grid .grid-section img {
   max-width: 100%; }
+
+.year-selection {
+  list-style: none;
+  display: flex;
+  justify-content: center; }
+  .year-selection li {
+    margin: 0 20px; }
+    .year-selection li a.btn.btn-primary.active {
+      background-color: #8bc53f;
+      border-color: #8bc53f; }

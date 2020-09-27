@@ -1,4 +1,15 @@
+.btn-primary {
+    background-color: transparent;
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: none;
+    border: 2px solid #8bc53f;
 
+    &:hover {
+        background-color: #8bc53f;
+        border: 2px solid #8bc53f;
+    }
+}
 
 .btn-landing{
     background-color:rgba(0, 0, 0, 0.486)
