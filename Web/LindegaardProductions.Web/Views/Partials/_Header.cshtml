@@ -1,0 +1,22 @@
+﻿<div class="row no-space">
+    <div class="col-12 landing no-space">
+        <div class="hero">
+            @if (this.Global.Header.Video != null)
+            {
+                <video loop poster muted autoplay preload="auto">
+                    <source src="@this.Global.Header.Video.Url" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+            }
+            <div class="caption capRegular">
+                <h1 class="font-weight-bold" data-aos="flip-up" data-aos-duration="2000">
+                    @this.Global.Header.Title
+                </h1>
+                <h2 data-aos="flip-up" data-aos-duration="2000">
+                    @this.Global.Header.SubHeading
+                </h2>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,94 @@
+﻿@model FrontPageViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid no-space topnav " id="myTopnav">
+    @Html.Partial("_Navigation", this.Global.NavigationItems)
+    @Html.Partial("_Header")
+
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <main class="main-content">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="section-title">Nyeste Nyheder</h2> <!--TODO: Dictionary-->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-sm-12">
+                        @if (Model.News != null)
+                        {
+                            <div class="row">
+                                @foreach (var item in Model.News.Take(3))
+                                {
+                                    <div class="col-md-8 offset-md-2 col-sm-12"  data-aos="zoom-in" data-aos-duration="1500">
+                                        <div class="card-item">
+                                            <div class="card card-blog">
+                                                <div class="row">
+                                                    <div class="col-md-5 col-sm-12">
+                                                        <div class="card-image">
+                                                            <img class="img img-raised" src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80">
+                                                            <div class="colored-shadow" style="background-image: url(https://images.unsplash.com/photo-1510915361894-db8b60106cb1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80); opacity: 1;"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-7 col-sm-12">
+                                                        <h3 class="card-title">
+                                                            <a href="@item.Url"> @item.Title</a>
+                                                        </h3>
+                                                        <p class="card-description">
+                                                            @item.MetaDescription
+                                                        </p>
+                                                        <a href="@item.Url" class="btn btn-green">Read More</a> <!--TODO: Dictionary-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                            <div class="row space-top">
+                                @foreach (var item in Model.News.Skip(3).Take(6))
+                                {
+                                    <!--cards-->
+                                    <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in" data-aos-duration="1500">
+                                        <div class="card-item">
+                                            <div class="card_plain">
+                                                <div class="card_image">
+                                                    <img src="@item.MetaImage.GetImageUrlOrDefault()?width=500" alt="@item.MetaImage.GetImageAltText()">
+                                                </div>
+                                                <div class="card_content">
+                                                    <h2 class="card_title">@item.Title</h2>
+                                                    <p class="card_text">@item.MetaDescription</p>
+                                                    <a href="@item.Url" class="btn card_btn">Read More</a><!--TODO: Dictionary-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--cards-->
+                                }
+                            </div>
+                        }
+                        <div class="row">
+                            <div class="col-12">
+                                @if (Model.MoreArticlesAvailable)
+                                {
+                                    <a href="@Model.NewsPageLink" class="btn btn-green">Læs flere nyheder</a> <!--TODO: Dictionary-->
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12">
+                        <!--Aside-->
+                        @Html.Partial("_Aside")
+                        <!--Aside-->
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+@Html.Partial("_Footer", this.Global.Footer)
