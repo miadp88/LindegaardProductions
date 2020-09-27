@@ -630,3 +630,6 @@ footer .faButtomWrap {
 .landing .hero .caption .btn-list {
   display: flex;
   justify-content: center; }
+
+.umb-grid .grid-section img {
+  max-width: 100%; }
