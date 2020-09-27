@@ -16,12 +16,14 @@ namespace LindegaardProductions.Web.Controllers
         public ActionResult Index(Frontpage currentPage)
         {
             var news = currentPage.Children<News>().FirstOrDefault();
-            var newestNews = news.Descendants<Article>().OrderByDescending(x => x.CreateDate).Take(6);
-
+            var allArticles = news.Descendants<Article>().OrderByDescending(x => x.CreateDate);
+            
             return View(new FrontPageViewModel()
             {
                 CurrentPage = currentPage,
-                News = newestNews != null ? newestNews : null,
+                News = allArticles != null ? allArticles.Take(9) : null,
+                MoreArticlesAvailable = allArticles.Count() > 9,
+                NewsPageLink = news.Url,
             });
         }
     }

@@ -11,5 +11,7 @@ namespace LindegaardProductions.Web.Models.ViewModels
     {
         public Frontpage CurrentPage { get; internal set; }
         public IEnumerable<Article> News { get; internal set; }
+        public bool MoreArticlesAvailable { get; internal set; }
+        public string NewsPageLink { get; internal set; }
     }
 }

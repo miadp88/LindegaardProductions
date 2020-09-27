@@ -2,17 +2,17 @@
 @import '../Helpers/vars';
 
 
-.landing{
-    .hero{
-        .caption{
-            h1{
+.landing {
+    .hero {
+        .caption {
+            h1 {
                 font-family: 'Libre Baskerville', serif;
                 font-size: 8vw;
                 text-align: center;
                 text-shadow: 2px 2px 4px #000000;
-        
             }
-            h2{
+
+            h2 {
                 font-family: 'Libre Baskerville', serif;
                 font-size: 6vw;
                 letter-spacing: 1.8vw;
@@ -22,76 +22,80 @@
                 text-shadow: 2px 2px 4px #000000;
             }
 
-            h3{
+            h3 {
                 color: $primaryGreen;
                 line-height: 20vw;
-                font-size:6.2vw;
+                font-size: 6.2vw;
                 text-align: center;
                 font-weight: bolder;
             }
-        }}}
-        
-
-        @media screen and (min-width: 600px) {
-            .landing{
-                .hero{
-                    .caption{
-                        h1{
-                            font-family: 'Libre Baskerville', serif;
-                            font-size: 10vw;
-                            text-align: center;
-                            text-shadow: 2px 2px 4px #000000;
-                               
-                        }
-                        h2{
-                            font-size: 8vw;
-                            letter-spacing: 30px;
-                            text-shadow: 2px 2px 4px #000000;
-                            line-height: 2vw;
-                            
-                        }
-            
-                        h3{
-                            color: $primaryGreen;
-                            line-height: 15vw;
-                            font-size:3.2vw;
-                            text-align: center;
-                            font-weight: bolder;
-                            text-shadow: 1px 2px 8px rgb(0, 0, 0);
-                        }
-                    }
-                
-                }}
         }
-
-        .abouttextcontainer{
-            color: rgba(255, 255, 255, 0.87);
-        }
+    }
+}
 
 
-
-        @media screen and (min-width: 1200px) {
-            .landing {
-
-
-                .hero {
-                    .capRegular {
-
-                        h1 {
-                            font-family: 'Libre Baskerville', serif;
-                            font-size: 6vw;
-                            text-align: center;
-                            text-shadow: 2px 2px 4px #000000;
-                        }
-
-                        h2 {
-                            font-size: 4vw;
-                            letter-spacing: 30px;
-                            text-shadow: 2px 2px 4px #000000;
-                            line-height: 120px;
-                        }
-                    }
+@media screen and (min-width: 600px) {
+    .landing {
+        .hero {
+            .caption {
+                h1 {
+                    font-family: 'Libre Baskerville', serif;
+                    font-size: 10vw;
+                    text-align: center;
+                    text-shadow: 2px 2px 4px #000000;
                 }
-            }}
 
-              
+                h2 {
+                    font-size: 8vw;
+                    letter-spacing: 30px;
+                    text-shadow: 2px 2px 4px #000000;
+                    line-height: 2vw;
+                }
+
+                h3 {
+                    color: $primaryGreen;
+                    line-height: 15vw;
+                    font-size: 3.2vw;
+                    text-align: center;
+                    font-weight: bolder;
+                    text-shadow: 1px 2px 8px rgb(0, 0, 0);
+                }
+            }
+        }
+    }
+}
+
+.abouttextcontainer {
+    color: rgba(255, 255, 255, 0.87);
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    .landing {
+
+
+        .hero {
+            .capRegular {
+
+                h1 {
+                    font-family: 'Libre Baskerville', serif;
+                    font-size: 6vw;
+                    text-align: center;
+                    text-shadow: 2px 2px 4px #000000;
+                }
+
+                h2 {
+                    font-size: 4vw;
+                    letter-spacing: 30px;
+                    text-shadow: 2px 2px 4px #000000;
+                    line-height: 120px;
+                }
+            }
+        }
+    }
+}
+
+.section-title{
+    color:white;
+}

@@ -8,46 +8,77 @@
     @Html.Partial("_Header")
 
 </div>
-    
+
 <div class="container-fluid">
     <div class="row">
         <div class="col-12">
             <main class="main-content">
                 <div class="row">
+                    <div class="col-12">
+                        <h2 class="section-title">Nyeste Nyheder</h2> <!--TODO: Dictionary-->
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-lg-8 col-sm-12">
-                        <div class="row">
-                            @if (Model.News != null)
-                            {
-                                foreach (var item in Model.News)
+                        @if (Model.News != null)
+                        {
+                            <div class="row">
+                                @foreach (var item in Model.News.Take(3))
+                                {
+                                    <div class="col-md-8 offset-md-2 col-sm-12"  data-aos="zoom-in" data-aos-duration="1500">
+                                        <div class="card-item">
+                                            <div class="card card-blog">
+                                                <div class="row">
+                                                    <div class="col-md-5 col-sm-12">
+                                                        <div class="card-image">
+                                                            <img class="img img-raised" src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80">
+                                                            <div class="colored-shadow" style="background-image: url(https://images.unsplash.com/photo-1510915361894-db8b60106cb1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80); opacity: 1;"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-7 col-sm-12">
+                                                        <h3 class="card-title">
+                                                            <a href="@item.Url"> @item.Title</a>
+                                                        </h3>
+                                                        <p class="card-description">
+                                                            @item.MetaDescription
+                                                        </p>
+                                                        <a href="@item.Url" class="btn btn-green">Read More</a> <!--TODO: Dictionary-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                            <div class="row space-top">
+                                @foreach (var item in Model.News.Skip(3).Take(6))
                                 {
                                     <!--cards-->
                                     <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in" data-aos-duration="1500">
-                                        <div class="card card-animated">
-                                            <div class="card-animated__content">
-                                                <h1 class="card-animated__title">@item.Title</h1>
-                                                <p>
-                                                    @item.MetaDescription
-                                                </p>
-                                                <a href="@item.Url" class="btn btn-readmore redMorebtn">Læs Mere</a><!--TODO: Dictionary-->
+                                        <div class="card-item">
+                                            <div class="card_plain">
+                                                <div class="card_image">
+                                                    <img src="@item.MetaImage.GetImageUrlOrDefault()?width=500" alt="@item.MetaImage.GetImageAltText()">
+                                                </div>
+                                                <div class="card_content">
+                                                    <h2 class="card_title">@item.Title</h2>
+                                                    <p class="card_text">@item.MetaDescription</p>
+                                                    <a href="@item.Url" class="btn card_btn">Read More</a><!--TODO: Dictionary-->
+                                                </div>
                                             </div>
-                                            <div class="card-animated__image-container">
-                                                <img class="card-animated__image"
-                                                     src="@item.MetaImage.GetImageUrlOrDefault()?width=500"
-                                                     alt="@item.MetaImage.GetImageAltText()">
-                                            </div>
-                                            <svg class="card-animated__svg" viewBox="0 0 800 500">
-                                                <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500"
-                                                      stroke="transparent" fill="#353131" />
-                                                <path class="card-animated__line"
-                                                      d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400"
-                                                      stroke-width="3" fill="transparent" />
-                                            </svg>
-
                                         </div>
                                     </div>
                                     <!--cards-->
                                 }
-                            }
+                            </div>
+                        }
+                        <div class="row">
+                            <div class="col-12">
+                                @if (Model.MoreArticlesAvailable)
+                                {
+                                    <a href="@Model.NewsPageLink" class="btn btn-green">Læs flere nyheder</a> <!--TODO: Dictionary-->
+                                }
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-12">

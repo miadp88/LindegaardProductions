@@ -58,34 +58,44 @@
         
     }
 }
-
-.btn-contact{
-    background-color:transparent;
-    color:white;
+.btn-green {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    color: #8BC53F;
+    font-weight: bold;
+    margin: 20px;
+    &:hover{
+        color:#fff;
+    }
+}
+.btn-contact {
+    background-color: transparent;
+    color: white;
     text-transform: capitalize;
     text-decoration: none;
-    font-size:5.3vw;
-    border:2px solid #8BC53F;
+    font-size: 5.3vw;
+    border: 2px solid #8BC53F;
     transition: 0.5s;
     border-radius: 5px;
     margin: 0 15vh;
-    box-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.363),
-      0 0 1rem rgba(0, 0, 0, 0.562);
-    .fa-sliders-h{
+    box-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.363), 0 0 1rem rgba(0, 0, 0, 0.562);
+
+    .fa-sliders-h {
         width: 13vw;
         height: 15vw;
         margin: auto;
         padding-top: 5vw;
-    
-    .fa{
-        font-weight: 1000;
+
+        .fa {
+            font-weight: 1000;
+        }
     }
-    
-    }
-    &:hover{
+
+    &:hover {
         background-color: #8BC53F;
-        color:white;
-     }
+        color: white;
+    }
 }
 
 

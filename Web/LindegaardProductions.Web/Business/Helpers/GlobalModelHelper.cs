@@ -19,12 +19,12 @@ namespace LindegaardProductions.Web.Business.Helpers
         public static GlobalModel GetGlobalModel(UmbracoHelper umbracoHelper, IPublishedContent currentPage, LandingPage landingPage)
         {
             string currentFrontPageLink = string.Empty;
+            string newsPageLink = string.Empty;
 
             if ((currentPage is LandingPage) == false)
             {
                 currentFrontPageLink = currentPage.AncestorOrSelf<Frontpage>().Url;
             }
-
             var model = new GlobalModel()
             {
                 LandingPageLink = landingPage.Url,
