@@ -35,10 +35,13 @@
         <div class="row no-space">
             <div class="col-12 landing no-space">
                 <div class="hero">
-                    <video loop poster muted autoplay preload="auto">
-                        <source src="@this.Global.Header.Video.Url" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                    @if (this.Global.Header.Video != null)
+                    {
+                        <video loop poster muted autoplay preload="auto">
+                            <source src="@this.Global.Header.Video.Url" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    }
                     <div class="caption">
                         @{
                             char[] split = { ' ' };

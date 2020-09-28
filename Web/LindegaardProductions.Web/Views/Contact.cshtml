@@ -4,5 +4,58 @@
 }
 
 
-@Html.Partial("_Navigation", this.Global.NavigationItems)
-@Html.Partial("_Header")
+<div class="container-fluid no-space topnav " id="myTopnav">
+    @Html.Partial("_Navigation", this.Global.NavigationItems)
+    <div class="row no-space">
+        <div class="col-12 landing no-space">
+            <div class="hero">
+                @if (this.Global.Header.Video != null)
+                {
+                    <video loop poster muted autoplay preload="auto">
+                        <source src="@this.Global.Header.Video.Url" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                }
+                <div class="container-fluid col-lg-8 col-md-10 col-sm-12 contactContainer" data-aos="zoom-in" data-aos-duration="1500">
+                    <h1 class="contactMe text-center contactMe text-white">Contact me</h1>
+                    <div class="col-12">
+                        <div class="card contactCard">
+                            <!--Form-->
+                            @using (Ajax.BeginForm("SendMail", "ContactSurface", new { }, new AjaxOptions { HttpMethod = "post", OnBegin = "ShowSpinner()", OnComplete = "HideSpinner()", OnFailure = "ShowErrorMessage('Kunne ikke sende besked på nuværende tidspunkt.')", OnSuccess = "ShowSuccessMessage('Besked afsendt.')" }, new { @class = "contactWrapper" }))
+                            {
+                                <div class="form-group">
+                                    <label for="name">Navn</label><!--TODO: Dictionary-->
+                                    <input type="text" class="form-control" name="name" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email address</label><!--TODO: Dictionary-->
+                                    <input type="email" class="form-control" name="email" placeholder="name@example.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Subject</label><!--TODO: Dictionary-->
+                                    <input type="email" class="form-control" name="subject">
+                                </div>
+                                <div class="form-group">
+                                    <label for="country">Country</label><!--TODO: Dictionary-->
+                                    <input type="email" class="form-control" name="country">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label><!--TODO: Dictionary-->
+                                    <textarea class="form-control" rows="3" name="message"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-contact ">
+                                        <span class="d-none d-sm-block ">Send</span>
+                                        <span class="d-sm-none"><i class="fa fa-paper-plane" aria-hidden="true"></i></span>
+                                    </button>
+                                </div>
+                            }
+                            <!--Form-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
