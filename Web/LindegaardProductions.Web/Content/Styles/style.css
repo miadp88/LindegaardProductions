@@ -26,6 +26,14 @@
   font-size: 6.2vw;
   text-align: center;
   font-weight: bolder; }
+  @media only screen and (min-width: 600px) {
+    .landing .hero .caption h3 {
+      color: #8BC53F;
+      line-height: 15vw;
+      font-size: 3.2vw;
+      text-align: center;
+      font-weight: bolder;
+      text-shadow: 1px 2px 8px black; } }
 
 @media screen and (min-width: 600px) {
   .landing .hero .caption h1 {
