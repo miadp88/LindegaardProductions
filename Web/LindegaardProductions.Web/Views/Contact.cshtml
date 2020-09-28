@@ -13,40 +13,40 @@
                 {
                     <video loop poster muted autoplay preload="auto">
                         <source src="@this.Global.Header.Video.Url" type="video/mp4">
-                        Your browser does not support the video tag.
+                        @Umbraco.GetDictionaryValue(DictionaryConstants.TitleUnsupportedVideo)
                     </video>
 
                 }
                 <div class="container-fluid col-lg-8 col-md-10 col-sm-12 contactContainer" data-aos="zoom-in" data-aos-duration="1500">
-                    <h1 class="contactMe text-center contactMe text-white">Contact me</h1>
+                    <h1 class="contactMe text-center contactMe text-white">@Umbraco.GetDictionaryValue(DictionaryConstants.TitleContactMe)</h1>
                     <div class="col-12">
                         <div class="card contactCard">
                             <!--Form-->
                             @using (Ajax.BeginForm("SendMail", "ContactSurface", new { }, new AjaxOptions { HttpMethod = "post", OnBegin = "ShowSpinner()", OnComplete = "HideSpinner()", OnFailure = "ShowErrorMessage('Kunne ikke sende besked på nuværende tidspunkt.')", OnSuccess = "ShowSuccessMessage('Besked afsendt.')" }, new { @class = "contactWrapper" }))
                             {
                                 <div class="form-group">
-                                    <label for="name">Navn</label><!--TODO: Dictionary-->
+                                    <label for="name">@Umbraco.GetDictionaryValue(DictionaryConstants.FormName)</label><!--TODO: Dictionary-->
                                     <input type="text" class="form-control" name="name" />
                                 </div>
                                 <div class="form-group">
-                                    <label for="email">Email address</label><!--TODO: Dictionary-->
+                                    <label for="email">@Umbraco.GetDictionaryValue(DictionaryConstants.FormEmail)</label><!--TODO: Dictionary-->
                                     <input type="email" class="form-control" name="email" placeholder="name@example.com">
                                 </div>
                                 <div class="form-group">
-                                    <label for="subject">Subject</label><!--TODO: Dictionary-->
+                                    <label for="subject">@Umbraco.GetDictionaryValue(DictionaryConstants.FormSubject)</label><!--TODO: Dictionary-->
                                     <input type="email" class="form-control" name="subject">
                                 </div>
                                 <div class="form-group">
-                                    <label for="country">Country</label><!--TODO: Dictionary-->
+                                    <label for="country">@Umbraco.GetDictionaryValue(DictionaryConstants.FormCountry)</label><!--TODO: Dictionary-->
                                     <input type="email" class="form-control" name="country">
                                 </div>
                                 <div class="form-group">
-                                    <label for="message">Message</label><!--TODO: Dictionary-->
+                                    <label for="message">@Umbraco.GetDictionaryValue(DictionaryConstants.FormMessage)</label><!--TODO: Dictionary-->
                                     <textarea class="form-control" rows="3" name="message"></textarea>
                                 </div>
                                 <div class="form-group">
                                     <button type="submit" class="btn btn-contact ">
-                                        <span class="d-none d-sm-block ">Send</span>
+                                        <span class="d-none d-sm-block ">@Umbraco.GetDictionaryValue(DictionaryConstants.FormSend)</span>
                                         <span class="d-sm-none"><i class="fa fa-paper-plane" aria-hidden="true"></i></span>
                                     </button>
                                 </div>

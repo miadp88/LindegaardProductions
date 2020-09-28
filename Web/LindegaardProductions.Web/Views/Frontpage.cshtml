@@ -15,7 +15,7 @@
             <main class="main-content">
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="section-title">Nyeste Nyheder</h2> <!--TODO: Dictionary-->
+                        <h2 class="section-title">@Umbraco.GetDictionaryValue(DictionaryConstants.TitleNewestNews)</h2> <!--TODO: Dictionary-->
                     </div>
                 </div>
                 <div class="row">
@@ -25,7 +25,7 @@
                             <div class="row">
                                 @foreach (var item in Model.News.Take(3))
                                 {
-                                    <div class="col-md-8 offset-md-2 col-sm-12"  data-aos="zoom-in" data-aos-duration="1500">
+                                    <div class="col-md-8 offset-md-2 col-sm-12" data-aos="zoom-in" data-aos-duration="1500">
                                         <div class="card-item">
                                             <div class="card card-blog">
                                                 <div class="row">
@@ -42,7 +42,7 @@
                                                         <p class="card-description">
                                                             @item.MetaDescription
                                                         </p>
-                                                        <a href="@item.Url" class="btn btn-green">Read More</a> <!--TODO: Dictionary-->
+                                                        <a href="@item.Url" class="btn btn-green">@Umbraco.GetDictionaryValue(DictionaryConstants.ButtonReadMore)</a> <!--TODO: Dictionary-->
                                                     </div>
                                                 </div>
                                             </div>
@@ -63,7 +63,7 @@
                                                 <div class="card_content">
                                                     <h2 class="card_title">@item.Title</h2>
                                                     <p class="card_text">@item.MetaDescription</p>
-                                                    <a href="@item.Url" class="btn card_btn">Read More</a><!--TODO: Dictionary-->
+                                                    <a href="@item.Url" class="btn card_btn">@Umbraco.GetDictionaryValue(DictionaryConstants.ButtonReadMore)</a><!--TODO: Dictionary-->
                                                 </div>
                                             </div>
                                         </div>
@@ -76,7 +76,7 @@
                             <div class="col-12">
                                 @if (Model.MoreArticlesAvailable)
                                 {
-                                    <a href="@Model.NewsPageLink" class="btn btn-green">Læs flere nyheder</a> <!--TODO: Dictionary-->
+                                    <a href="@Model.NewsPageLink" class="btn btn-green">@Umbraco.GetDictionaryValue(DictionaryConstants.ButtonReadMoreNews)</a> <!--TODO: Dictionary-->
                                 }
                             </div>
                         </div>
