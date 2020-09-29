@@ -9,51 +9,53 @@
   font-family: 'Libre Baskerville', serif;
   font-size: 3em;
   text-align: center;
-  text-shadow: 2px 2px 4px #000000;
-  color: red; }
-  @media screen and (min-width: 600px) {
+  text-shadow: 2px 2px 4px #000000; }
+  @media (min-width: 576px) {
     .landing .hero .caption h1 {
-      font-size: .5em;
-      color: green; } }
-  @media screen and (min-width: 800px) {
+      font-size: 3em; } }
+  @media (min-width: 768px) {
     .landing .hero .caption h1 {
-      font-size: 6em;
-      color: blue; } }
+      font-size: 5em; } }
+  @media (min-width: 1000px) {
+    .landing .hero .caption h1 {
+      font-size: 7em; } }
 
 .landing .hero .caption h2 {
   font-family: 'Libre Baskerville', serif;
-  font-size: 2.1rem;
-  letter-spacing: 0.6rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.7rem;
   line-height: 0;
   text-align: center;
   margin-left: 10px;
   text-shadow: 2px 2px 4px #000000; }
-  @media screen and (min-width: 600px) {
-    .landing .hero .caption h2 h2 {
-      font-size: 8vw;
-      letter-spacing: 30px;
-      text-shadow: 2px 2px 4px #000000;
-      line-height: 2vw; } }
-  @media screen and (min-width: 800px) {
-    .landing .hero .caption h2 h2 {
-      font-size: 4vw;
-      letter-spacing: 30px;
-      text-shadow: 2px 2px 4px #000000;
-      line-height: 120px; } }
+  @media (min-width: 576px) {
+    .landing .hero .caption h2 {
+      font-size: 1.7em;
+      letter-spacing: 10px; } }
+  @media (min-width: 768px) {
+    .landing .hero .caption h2 {
+      font-size: 3em;
+      letter-spacing: 14px; } }
+  @media (min-width: 1000px) {
+    .landing .hero .caption h2 {
+      font-size: 4.5em;
+      letter-spacing: 16px;
+      line-height: 8px; } }
 
 .landing .hero .caption h3 {
   color: #8BC53F;
   line-height: 6rem;
-  font-size: 1rem;
+  font-size: 5rem;
   text-align: center;
   font-weight: bolder; }
-  @media only screen and (min-width: 600px) {
+  @media (min-width: 576px) {
     .landing .hero .caption h3 {
-      line-height: 10rem;
-      font-size: 1rem;
-      text-align: center;
-      font-weight: bolder;
-      text-shadow: 1px 2px 8px black; } }
+      line-height: 6rem;
+      font-size: 1rem; } }
+  @media (min-width: 768px) {
+    .landing .hero .caption h3 {
+      line-height: 6rem;
+      font-size: 1rem; } }
 
 .abouttextcontainer {
   color: rgba(255, 255, 255, 0.87); }

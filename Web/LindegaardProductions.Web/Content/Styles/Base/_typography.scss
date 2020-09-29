@@ -10,60 +10,63 @@
                 font-size: 3em;
                 text-align: center;
                 text-shadow: 2px 2px 4px #000000;
-                color: red;
 
-                @media screen and (min-width: 600px) {
-                    font-size: .5em;
-                    color: green;
+                @media (min-width: 576px) {
+                    font-size: 3em;
                 }
 
-                @media screen and (min-width: 800px) {
-                    font-size: 6em;
-                    color: blue;
+                @media (min-width: 768px) {
+                    font-size: 5em;
+                }
+
+                @media (min-width: 1000px) {
+                    font-size: 7em;
                 }
             }
 
             h2 {
                 font-family: 'Libre Baskerville', serif;
-                font-size: 2.1rem;
-                letter-spacing: 0.6rem;
+                font-size: 1.6rem;
+                letter-spacing: 0.7rem;
                 line-height: 0;
                 text-align: center;
                 margin-left: 10px;
                 text-shadow: 2px 2px 4px #000000;
 
-                @media screen and (min-width: 600px) {
-                    h2 {
-                        font-size: 8vw;
-                        letter-spacing: 30px;
-                        text-shadow: 2px 2px 4px #000000;
-                        line-height: 2vw;
-                    }
+                @media (min-width: 576px) {
+                    font-size: 1.7em;
+                    letter-spacing: 10px;
                 }
 
-                @media screen and (min-width: 800px) {
-                    h2 {
-                        font-size: 4vw;
-                        letter-spacing: 30px;
-                        text-shadow: 2px 2px 4px #000000;
-                        line-height: 120px;
-                    }
+                @media (min-width: 768px) {
+                    font-size: 3em;
+                    letter-spacing: 14px;
+                }
+
+                @media (min-width: 1000px) {
+                    font-size: 4.5em;
+                    letter-spacing: 16px;
+                    line-height: 8px;
+                   
                 }
             }
 
             h3 {
                 color: $primaryGreen;
                 line-height: 6rem;
-                font-size: 1rem;
+                font-size: 5rem;
                 text-align: center;
                 font-weight: bolder;
 
-                @media only screen and (min-width: 600px) {
-                    line-height: 10rem;
+                @media (min-width: 576px) {
+                    line-height: 6rem;
                     font-size: 1rem;
-                    text-align: center;
-                    font-weight: bolder;
-                    text-shadow: 1px 2px 8px rgb(0, 0, 0);
+                }
+
+                @media (min-width: 768px) {
+                    line-height: 6rem;
+                    font-size: 1rem;
+
                 }
             }
         }
@@ -74,15 +77,15 @@
 
 
 
-.abouttextcontainer {
-    color: rgba(255, 255, 255, 0.87);
-}
+    .abouttextcontainer {
+        color: rgba(255, 255, 255, 0.87);
+    }
 
 
 
 
 
 
-.section-title {
-    color: white;
-}
+    .section-title {
+        color: white;
+    }
