@@ -343,6 +343,7 @@
     <Content Include="Global.asax" />
     <Content Include="Scripts\Custom\animation.js" />
     <Content Include="Scripts\Custom\audioPlayer.js" />
+    <Content Include="Scripts\Custom\custom.js" />
     <Content Include="Scripts\Plugins\jquery.validate.min.js" />
     <Content Include="Scripts\Plugins\sweetalert2.all.min.js" />
     <Content Include="Web.config" />
@@ -371,12 +372,14 @@
     <Compile Include="Controllers\NotFoundController.cs" />
     <Compile Include="Controllers\Shared\PageControllerBase.cs" />
     <Compile Include="Controllers\Surface\ContactSurfaceController.cs" />
+    <Compile Include="Controllers\Surface\NewsSurfaceController.cs" />
     <Compile Include="Controllers\TextPageController.cs" />
     <Compile Include="Controllers\YearController.cs" />
     <Compile Include="Models\Helpers\FooterModel.cs" />
     <Compile Include="Models\Helpers\GlobalModel.cs" />
     <Compile Include="Models\Helpers\HeaderModel.cs" />
     <Compile Include="Models\Helpers\NavigationItemModel.cs" />
+    <Compile Include="Models\Helpers\NewsCardsModel.cs" />
     <Compile Include="Models\Helpers\SeoModel.cs" />
     <Compile Include="Models\Helpers\TeaserPageModel.cs" />
     <Compile Include="Models\ModelsBuilder\Article.generated.cs" />
@@ -471,6 +474,8 @@
     <Content Include="Views\Partials\_Aside.cshtml" />
     <Content Include="Views\Partials\_Analytics.cshtml" />
     <Content Include="Views\Partials\_Footer.cshtml" />
+    <Content Include="Views\Partials\_NewsCards.cshtml" />
+    <Content Include="Views\Partials\_Spinner.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
