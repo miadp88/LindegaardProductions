@@ -31,7 +31,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title font-weight-bolder">@item.Title</h5>
                                         <p class="card-text ">@item.MetaDescription</p>
-                                        <a href="@item.Url" class="btn btn-primary">Read more</a><!--TODO: Dictionary-->
+                                        <a href="@item.Url" class="btn btn-primary">@Umbraco.GetDictionaryValue(DictionaryConstants.ButtonReadMore)</a>
                                     </div>
                                 </div>
                             }
