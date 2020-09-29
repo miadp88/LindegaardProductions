@@ -1,4 +1,5 @@
-﻿body {
+﻿@charset "UTF-8";
+body {
   background-color: black; }
 
 .main-content {
@@ -11,14 +12,14 @@
   text-align: center;
   text-shadow: 2px 2px 4px #000000;
   color: red; }
-  @media screen and (max-width: 600px) {
+  @media screen and (m�n-width: 600px) {
     .landing .hero .caption h1 h1 {
       font-family: 'Libre Baskerville', serif;
       font-size: .5em;
       text-align: center;
       text-shadow: 2px 2px 4px #000000;
       color: green; } }
-  @media screen and (max-width: 800px) {
+  @media screen and (min-width: 800px) {
     .landing .hero .caption h1 h1 {
       font-family: 'Libre Baskerville', serif;
       font-size: 6em;

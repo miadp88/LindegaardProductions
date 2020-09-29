@@ -12,7 +12,7 @@
                 text-shadow: 2px 2px 4px #000000;
                 color: red;
 
-                @media screen and (max-width: 600px) {
+                @media screen and (mín-width: 600px) {
                     h1 {
                         font-family: 'Libre Baskerville', serif;
                         font-size: .5em;
@@ -22,7 +22,7 @@
                     }
                 }
 
-                @media screen and (max-width: 800px) {
+                @media screen and (min-width: 800px) {
                     h1 {
                         font-family: 'Libre Baskerville', serif;
                         font-size: 6em;
