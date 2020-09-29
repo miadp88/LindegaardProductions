@@ -12,24 +12,14 @@
                 text-shadow: 2px 2px 4px #000000;
                 color: red;
 
-                @media screen and (mín-width: 600px) {
-                    h1 {
-                        font-family: 'Libre Baskerville', serif;
-                        font-size: .5em;
-                        text-align: center;
-                        text-shadow: 2px 2px 4px #000000;
-                        color: green;
-                    }
+                @media screen and (min-width: 600px) {
+                    font-size: .5em;
+                    color: green;
                 }
 
                 @media screen and (min-width: 800px) {
-                    h1 {
-                        font-family: 'Libre Baskerville', serif;
-                        font-size: 6em;
-                        text-align: center;
-                        text-shadow: 2px 2px 4px #000000;
-                        color: blue;
-                    }
+                    font-size: 6em;
+                    color: blue;
                 }
             }
 
@@ -84,15 +74,15 @@
 
 
 
-    .abouttextcontainer {
-        color: rgba(255, 255, 255, 0.87);
-    }
+.abouttextcontainer {
+    color: rgba(255, 255, 255, 0.87);
+}
 
 
 
 
 
 
-        .section-title {
-            color: white;
-        }
+.section-title {
+    color: white;
+}
