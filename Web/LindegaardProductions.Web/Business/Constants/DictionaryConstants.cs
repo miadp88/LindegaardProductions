@@ -24,10 +24,13 @@ namespace LindegaardProductions.Web.Business.Constants
         public const string FormSend = "Form.Send";
         public const string FormSubject = "Form.Subject";
 
-
         // Buttons
         public const string ButtonReadMore = "Button.Readmore";
         public const string ButtonReadMoreNews = "Button.ReadMoreNews";
+
+        // Recaptcha
+        public const string RecaptchaSecretKey = "Recaptcha.SecretKey";
+        public const string RecaptchaSiteKey = "Recaptcha.Sitekey";
 
     }
 }

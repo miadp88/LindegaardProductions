@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using LindegaardProductions.Web.Business.Constants;
 using LindegaardProductions.Web.Business.Services;
 using Newtonsoft.Json;
 using Umbraco.Web;
@@ -21,7 +22,7 @@ namespace LindegaardProductions.Web.Business.Helpers
 
         public string AuthenticateRecaptcha(string response)
         {
-            string secretKey = umbracoHelper.GetDictionaryValue("Google Captcha Secret Key");
+            string secretKey = umbracoHelper.GetDictionaryValue(DictionaryConstants.RecaptchaSecretKey);
 
             var webClient = new WebClient();
             var reply =

@@ -333,7 +333,7 @@
     <Content Include="Content\Media\headerLogo.svg" />
     <Content Include="Content\Media\musicianIcon.svg" />
     <Content Include="Content\Media\musicianSmallIcon.svg" />
-    <Content Include="Content\Media\placeholder.jpg" />
+    <Content Include="Content\Media\placeholder.png" />
     <Content Include="Content\Styles\style.css">
       <DependentUpon>style.scss</DependentUpon>
     </Content>
