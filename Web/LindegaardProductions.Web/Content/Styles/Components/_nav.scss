@@ -1,13 +1,23 @@
-  .navbar{
+.navbar {
     background-color: black;
-    .collapse{
-        
-        .navbar-nav{
+
+    .collapse {
+
+        .navbar-nav {
             margin-left: auto;
             font-size: 2.5vh;
             right: 0;
-            
-            
+        }
+    }
+
+    .navbar-brand {
+        position: relative;
+        top: 0;
+        padding-top: 0;
+
+        img {
+            height: 50px;
+            width: 50px;
         }
     }
 } 
@@ -17,7 +27,8 @@
     .navbar{
         .nav-link{
             margin: auto;
-            font-size: larger;     
+            font-size: larger; 
+            top: 10px
         }
     }
 }
