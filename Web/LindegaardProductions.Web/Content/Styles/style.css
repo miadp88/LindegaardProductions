@@ -83,6 +83,9 @@
   transition: 0.5s;
   border-radius: 5px;
   margin: 0 15px; }
+  .btn-landing .d-sm-blocl {
+    width: fit-content;
+    height: fit-content; }
   @media screen and (max-width: 575px) {
     .btn-landing {
       border: none;
@@ -159,30 +162,42 @@
       padding-top: 0; } }
   @media screen and (min-width: 750px) {
     .btn-list .btn-landing {
-      min-width: 20vw;
-      line-height: 3.5vw;
-      padding: 3vw 3vw 4vw 3vw;
+      min-width: 30rem;
+      line-height: 5rem;
+      padding: 1.9vw 3vw 3.3vw 3vw;
       font-size: 3.5vw;
       max-width: 300px;
       max-height: 40px;
       line-height: 1vw; }
       .btn-list .btn-landing:hover {
         background-color: #8BC53F;
-        color: white; } }
+        color: white; }
+      .btn-list .btn-landing a {
+        width: 100%; } }
+  @media screen and (min-width: 752px) {
+    .btn-list .btn-landing {
+      font-size: 3vw;
+      min-width: 10rem;
+      max-height: 40px; } }
   @media screen and (min-width: 1000px) {
     .btn-list .btn-landing {
       font-size: 3vw;
-      max-width: 20px;
+      min-width: 10rem;
       max-height: 40px; } }
   @media screen and (min-width: 1200px) {
     .btn-list .btn-landing {
       font-size: 3vw;
-      width: 10px;
+      min-width: 10rem;
       height: 15px; }
     .btn-list .btn-contact {
       font-size: 2.5vw;
       max-width: 15vh;
       max-height: 25vh; } }
+  @media screen and (min-width: 1960px) {
+    .btn-list .btn-landing {
+      font-size: 3vw;
+      min-width: 30rem;
+      max-height: 40px; } }
   @media screen and (min-width: 590px) {
     .btn-list .btn-contact {
       font-size: 2.5vw;
