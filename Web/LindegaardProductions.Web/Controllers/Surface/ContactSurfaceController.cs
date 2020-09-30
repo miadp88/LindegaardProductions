@@ -26,7 +26,7 @@ namespace LindegaardProductions.Web.Controllers.Surface
             this.captchaHelper = captchaHelper;
         }
 
-        public ActionResult SendMail(string name, string email, string message, string country, string pageId)
+        public ActionResult SendMail(string name, string email, string subject, string country, string message, string pageId)
         {
             try
             {
@@ -39,7 +39,8 @@ namespace LindegaardProductions.Web.Controllers.Surface
                     var body = contactPage.EmailTemplate.ToString()
                         .Replace("##name##", name)
                         .Replace("##email##", email)
-                        .Replace("##country##", message)
+                        .Replace("##subject##", subject)
+                        .Replace("##country##", country)
                         .Replace("##message##", message);
 
                     MailHelper.SendMail("noreply@lindegaardproduction.dk", contactPage.ReceiverEmail, "Besked fra kontaktformular", body, true);

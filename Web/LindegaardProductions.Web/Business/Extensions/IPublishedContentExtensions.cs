@@ -16,7 +16,7 @@ namespace LindegaardProductions.Web.Business.Extensions
         /// <param name="image"></param>
         /// <param name="fallback"></param>
         /// <returns></returns>
-        public static string GetImageUrlOrDefault(this IPublishedContent image, string fallback = "/Content/Media/placeholder.jpg")
+        public static string GetImageUrlOrDefault(this IPublishedContent image, string fallback = "/Content/Media/placeholder.png")
         {
             if (image != null)
             {

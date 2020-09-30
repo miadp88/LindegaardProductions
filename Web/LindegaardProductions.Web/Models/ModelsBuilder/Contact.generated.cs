@@ -45,7 +45,7 @@ namespace LindegaardProductions.Web.Models.ModelsBuilder
 		// properties
 
 		///<summary>
-		/// Email Template: Format the email you want to receive with the information from the contact form. Insert these tags where you want the information displayed. ##name## ##email## ##country## ##message##
+		/// Email Template: Format the email you want to receive with the information from the contact form. Insert these tags where you want the information displayed. ##name## ##email## ##country## ##subject## ##message##
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.4")]
 		[ImplementPropertyType("emailTemplate")]
