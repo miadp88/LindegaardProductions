@@ -203,26 +203,6 @@
         font-size: 6vh;
         text-shadow: 1px 2px 8px black; } }
 
-.navbar {
-  background-color: black; }
-  .navbar .collapse .navbar-nav {
-    margin-left: auto;
-    font-size: 1.2rem;
-    right: 0; }
-  .navbar .navbar-brand {
-    position: relative;
-    top: 0;
-    padding-top: 0; }
-    .navbar .navbar-brand img {
-      height: 50px;
-      width: 50px; }
-
-@media screen and (max-width: 876px) {
-  .navbar .nav-link {
-    margin: auto;
-    font-size: larger;
-    top: 10px; } }
-
 .contactContainer {
   z-index: 5;
   padding-top: 12vh; }
@@ -269,54 +249,21 @@
   background-color: black; }
   .navbar .collapse .navbar-nav {
     margin-left: auto;
-    font-size: 2.5vh;
+    font-size: 1.2rem;
     right: 0; }
+  .navbar .navbar-brand {
+    position: relative;
+    top: 0;
+    padding-top: 0; }
+    .navbar .navbar-brand img {
+      height: 50px;
+      width: 50px; }
 
 @media screen and (max-width: 876px) {
   .navbar .nav-link {
     margin: auto;
-    font-size: larger; } }
-
-.card-animated {
-  position: relative;
-  background: #353131;
-  width: 100%;
-  height: 450px;
-  padding: 2rem;
-  color: #aaa;
-  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  margin: 20px 0; }
-  .card-animated__image-container {
-    margin: -2rem -2rem 1rem -2rem; }
-  .card-animated__line {
-    opacity: 0;
-    animation: LineFadeIn .8s .8s forwards ease-in;
-    margin-top: 5vw; }
-  .card-animated__image {
-    opacity: 0;
-    animation: ImageFadeIn .8s 1.4s forwards;
-    max-width: 100%;
-    position: absolute;
-    z-index: 0;
-    height: 60%;
-    width: 100%; }
-  .card-animated__title {
-    color: white;
-    margin-top: 10vw;
-    font-weight: 800;
-    letter-spacing: 0.01em;
-    font-size: 3vh; }
-  .card-animated__content {
-    opacity: 0;
-    animation: ContentFadeIn .8s 1.6s forwards;
-    position: absolute;
-    z-index: 5000;
-    margin-bottom: 50px; }
-  .card-animated__svg {
-    position: absolute;
-    left: 0;
-    top: inherit; }
+    font-size: larger;
+    top: 10px; } }
 
 .news .newscard {
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
@@ -327,7 +274,7 @@
   .news .newscard .card-body {
     background-color: #353131;
     padding: 0;
-    padding: 1vh; }
+    padding: 1rem; }
     .news .newscard .card-body .card-title {
       color: white; }
     .news .newscard .card-body .card-text {
@@ -348,7 +295,7 @@
   .textcard .card-body {
     background-color: #353131;
     padding: 0;
-    padding: 1vh; }
+    padding: 1rem; }
     .textcard .card-body .card-title {
       color: white; }
     .textcard .card-body .card-text {
