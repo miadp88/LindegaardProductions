@@ -26,7 +26,7 @@
                             {
                                 <div class="form-group">
                                     <label for="name">@Umbraco.GetDictionaryValue(DictionaryConstants.FormName)</label>
-                                    <input type="text" class="form-control" name="name" required/>
+                                    <input type="text" class="form-control" name="name" required />
                                 </div>
                                 <div class="form-group">
                                     <label for="email">@Umbraco.GetDictionaryValue(DictionaryConstants.FormEmail)</label>
@@ -63,3 +63,5 @@
         </div>
     </div>
 </div>
+
+@Html.Partial("_Footer", this.Global.Footer)
