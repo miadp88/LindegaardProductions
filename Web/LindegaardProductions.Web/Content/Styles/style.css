@@ -107,13 +107,13 @@
   .btn-list button, .btn-list a {
     float: left; }
   .btn-list .fa-music {
-    width: 13vw;
-    height: 23vw;
+    width: 3rem;
+    height: 3rem;
     margin: 4px;
     padding: 0; }
   .btn-list .fa-sliders-h {
-    width: 13vw;
-    height: 23vw;
+    width: 3rem;
+    height: 3rem;
     margin: auto;
     padding-top: 0; }
   .btn-list .btn-green {
@@ -146,20 +146,6 @@
     .btn-list .btn-contact:hover {
       background-color: #8BC53F;
       color: white; }
-  @media screen and (max-width: 890px) {
-    .btn-list .card-animated .btn-readmore {
-      font-size: 2.5vh;
-      font-weight: bolder; } }
-  @media screen and (max-width: 570px) {
-    .btn-list .card-animated .btn-readmore {
-      font-size: 2.5vh;
-      font-weight: bolder;
-      padding-top: 0; } }
-  @media screen and (max-width: 890px) {
-    .btn-list .card-animated .btn-readmore {
-      font-size: 2.5vh;
-      font-weight: bolder;
-      padding-top: 0; } }
   @media screen and (min-width: 750px) {
     .btn-list .btn-landing {
       min-width: 30rem;
