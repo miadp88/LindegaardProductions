@@ -48,7 +48,18 @@
             color: white;
         }
     }
+.btn-green {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    color: #8BC53F;
+    font-weight: bold;
+    margin: 20px;
 
+    &:hover {
+        color: #fff;
+    }
+}
 .btn-list {
     margin-top: 40px;
 
@@ -72,18 +83,7 @@
         padding-top: 0;
     }
 
-    .btn-green {
-        display: flex;
-        justify-content: center;
-        font-size: 18px;
-        color: #8BC53F;
-        font-weight: bold;
-        margin: 20px;
-
-        &:hover {
-            color: #fff;
-        }
-    }
+    
 
     .btn-contact {
         background-color: transparent;

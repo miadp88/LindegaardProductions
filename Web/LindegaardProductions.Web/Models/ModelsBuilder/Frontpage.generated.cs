@@ -45,7 +45,7 @@ namespace LindegaardProductions.Web.Models.ModelsBuilder
 		// properties
 
 		///<summary>
-		/// Gallery
+		/// Gallery: Selected images that you want visitors to see.
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.4")]
 		[ImplementPropertyType("gallery")]
@@ -59,28 +59,28 @@ namespace LindegaardProductions.Web.Models.ModelsBuilder
 		public string PageIcon => this.Value<string>("pageIcon");
 
 		///<summary>
-		/// Sound files
+		/// Sound files: For visitors to hear some samples of music.
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.4")]
 		[ImplementPropertyType("soundFiles")]
 		public global::System.Collections.Generic.IEnumerable<global::Umbraco.Core.Models.PublishedContent.IPublishedContent> SoundFiles => this.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Core.Models.PublishedContent.IPublishedContent>>("soundFiles");
 
 		///<summary>
-		/// Sub Heading
+		/// Sub Heading: Placed beneath the title
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.4")]
 		[ImplementPropertyType("subHeading")]
 		public string SubHeading => global::LindegaardProductions.Web.Models.ModelsBuilder.Header.GetSubHeading(this);
 
 		///<summary>
-		/// Title
+		/// Title: Title is shown in hero area. And is the main title for the page
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.4")]
 		[ImplementPropertyType("title")]
 		public string Title => global::LindegaardProductions.Web.Models.ModelsBuilder.Header.GetTitle(this);
 
 		///<summary>
-		/// Video: Select a video for the header.
+		/// Video: Select a video for the header. It will play in a loop in the background.
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.4")]
 		[ImplementPropertyType("video")]
@@ -94,21 +94,21 @@ namespace LindegaardProductions.Web.Models.ModelsBuilder
 		public bool UmbracoNaviHide => global::LindegaardProductions.Web.Models.ModelsBuilder.Navigation.GetUmbracoNaviHide(this);
 
 		///<summary>
-		/// Meta Description
+		/// Meta Description: A short description of the content of the page. Will be shown on google and facebook etc. As well on cards on the website.
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.4")]
 		[ImplementPropertyType("metaDescription")]
 		public string MetaDescription => global::LindegaardProductions.Web.Models.ModelsBuilder.SEO.GetMetaDescription(this);
 
 		///<summary>
-		/// Meta Image
+		/// Meta Image: The image of the page, will be seen on cards, and when sharing the page on social media, or searched on google
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.4")]
 		[ImplementPropertyType("metaImage")]
 		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent MetaImage => global::LindegaardProductions.Web.Models.ModelsBuilder.SEO.GetMetaImage(this);
 
 		///<summary>
-		/// MetaTitle
+		/// MetaTitle: Title that will be seen on google or facebook etc. when sharing the page. And as the title in the tab in your browser.
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.4")]
 		[ImplementPropertyType("metaTitle")]
