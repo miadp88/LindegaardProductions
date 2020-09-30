@@ -230,7 +230,7 @@
     position: relative;
     background: rgba(0, 0, 0, 0.288);
     width: 100%;
-    height: 550px;
+    height: auto;
     border-radius: 6px;
     padding: 2rem;
     color: #aaa;
@@ -239,6 +239,43 @@
     margin: 20px 0; }
     .contactContainer .contactCard textarea {
       height: 20vh; }
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  display: none;
+  position: fixed;
+  z-index: 50;
+  top: 20px;
+  right: 20px;
+  animation: sk-chase 2.5s infinite linear both; }
+  .spinner .sk-chase-dot {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: sk-chase-dot 2.0s infinite ease-in-out both; }
+  .spinner .sk-chase-dot:before {
+    content: '';
+    display: block;
+    width: 25%;
+    height: 25%;
+    background-color: #000000;
+    border-radius: 100%;
+    animation: sk-chase-dot-before 2.0s infinite ease-in-out both; }
+
+.navbar {
+  background-color: black; }
+  .navbar .collapse .navbar-nav {
+    margin-left: auto;
+    font-size: 2.5vh;
+    right: 0; }
+
+@media screen and (max-width: 876px) {
+  .navbar .nav-link {
+    margin: auto;
+    font-size: larger; } }
 
 .card-animated {
   position: relative;
@@ -645,6 +682,6 @@ footer .faButtomWrap {
   justify-content: center; }
   .year-selection li {
     margin: 0 20px; }
-    .year-selection li a.btn.btn-primary.active {
+    .year-selection li button.btn.btn-primary.active {
       background-color: #8bc53f;
       border-color: #8bc53f; }

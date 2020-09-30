@@ -1,0 +1,21 @@
+.contactContainer {
+    z-index: 5;
+    padding-top: 12vh;
+
+    .contactCard {
+        position: relative;
+        background: rgba(0, 0, 0, 0.288);
+        width: 100%;
+        height: auto;
+        border-radius: 6px;
+        padding: 2rem;
+        color: #aaa;
+        box-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.5), 0 0 1rem rgba(0,0,0,0.2);
+        overflow: hidden;
+        margin: 20px 0;
+
+        textarea {
+            height: 20vh;
+        }
+    }
+}

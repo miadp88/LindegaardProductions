@@ -5,7 +5,7 @@
             {
                 <video loop poster muted autoplay preload="auto">
                     <source src="@this.Global.Header.Video.Url" type="video/mp4">
-                    Your browser does not support the video tag.
+                    @Umbraco.GetDictionaryValue(DictionaryConstants.TitleUnsupportedVideo)
                 </video>
 
             }
