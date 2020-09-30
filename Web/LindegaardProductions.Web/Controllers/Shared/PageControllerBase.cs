@@ -35,7 +35,7 @@ namespace LindegaardProductions.Web.Controllers.Shared
             // Set Global model properties;
             var homePage = CurrentPage.AncestorOrSelf<LandingPage>();
 
-            globalModel = GlobalModelHelper.GetGlobalModel(Umbraco, CurrentPage, homePage);
+            globalModel = GlobalModelHelper.GetGlobalModel(Umbraco, CurrentPage, homePage, AppCaches);
 
             this.ViewData[AbstractViewPage.GlobalModelViewDataKey] = globalModel;
         }

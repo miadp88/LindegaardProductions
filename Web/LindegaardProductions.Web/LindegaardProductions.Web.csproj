@@ -363,6 +363,7 @@
     <Compile Include="Business\Helpers\TeaserPageHelper.cs" />
     <Compile Include="Business\Mappers\NavigationItemMapper.cs" />
     <Compile Include="Business\Services\IInjected.cs" />
+    <Compile Include="Business\Services\LanguageVariantService.cs" />
     <Compile Include="Business\ViewPages\AbstractViewPage.cs" />
     <Compile Include="Controllers\ArticleController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
@@ -375,6 +376,7 @@
     <Compile Include="Controllers\Surface\NewsSurfaceController.cs" />
     <Compile Include="Controllers\TextPageController.cs" />
     <Compile Include="Controllers\YearController.cs" />
+    <Compile Include="Models\Helpers\CultureUrlModel.cs" />
     <Compile Include="Models\Helpers\FooterModel.cs" />
     <Compile Include="Models\Helpers\GlobalModel.cs" />
     <Compile Include="Models\Helpers\HeaderModel.cs" />
