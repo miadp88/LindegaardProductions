@@ -7,35 +7,64 @@
         .caption {
             h1 {
                 font-family: 'Libre Baskerville', serif;
-                font-size: 8vw;
+                font-size: 3em;
                 text-align: center;
                 text-shadow: 2px 2px 4px #000000;
+
+                @media (min-width: 576px) {
+                    font-size: 3em;
+                }
+
+                @media (min-width: 768px) {
+                    font-size: 5em;
+                }
+
+                @media (min-width: 1000px) {
+                    font-size: 7em;
+                }
             }
 
             h2 {
                 font-family: 'Libre Baskerville', serif;
-                font-size: 6vw;
-                letter-spacing: 1.8vw;
+                font-size: 1.6rem;
+                letter-spacing: 0.7rem;
                 line-height: 0;
                 text-align: center;
-                margin-left: 2vw;
+                margin-left: 10px;
                 text-shadow: 2px 2px 4px #000000;
+
+                @media (min-width: 576px) {
+                    font-size: 1.7em;
+                    letter-spacing: 10px;
+                }
+
+                @media (min-width: 768px) {
+                    font-size: 3em;
+                    letter-spacing: 14px;
+                }
+
+                @media (min-width: 1000px) {
+                    font-size: 4.5em;
+                    letter-spacing: 16px;
+                    line-height: 8px;
+                }
             }
 
             h3 {
                 color: $primaryGreen;
-                line-height: 20vw;
-                font-size: 6.2vw;
+                font-size: 1.2rem;
                 text-align: center;
                 font-weight: bolder;
+                margin-top: 200px;
 
-                @media only screen and (min-width: 600px) {
-                    color: $primaryGreen;
-                    line-height: 15vw;
-                    font-size: 3.2vw;
-                    text-align: center;
-                    font-weight: bolder;
-                    text-shadow: 1px 2px 8px rgb(0, 0, 0);
+                @media (min-width: 576px) {
+                    line-height: 6rem;
+                    font-size: 1.5rem;
+                }
+
+                @media (min-width: 768px) {
+                    line-height: 0;
+                    font-size: 2rem;
                 }
             }
         }
@@ -43,68 +72,18 @@
 }
 
 
-@media screen and (min-width: 600px) {
-    .landing {
-        .hero {
-            .caption {
-                h1 {
-                    font-family: 'Libre Baskerville', serif;
-                    font-size: 10vw;
-                    text-align: center;
-                    text-shadow: 2px 2px 4px #000000;
-                }
 
-                h2 {
-                    font-size: 8vw;
-                    letter-spacing: 30px;
-                    text-shadow: 2px 2px 4px #000000;
-                    line-height: 2vw;
-                }
 
-                h3 {
-                    color: $primaryGreen;
-                    line-height: 15vw;
-                    font-size: 3.2vw;
-                    text-align: center;
-                    font-weight: bolder;
-                    text-shadow: 1px 2px 8px rgb(0, 0, 0);
-                }
-            }
-        }
+
+    .abouttextcontainer {
+        color: rgba(255, 255, 255, 0.87);
     }
-}
-
-.abouttextcontainer {
-    color: rgba(255, 255, 255, 0.87);
-}
 
 
 
-@media screen and (min-width: 1200px) {
-    .landing {
 
 
-        .hero {
-            .capRegular {
 
-                h1 {
-                    font-family: 'Libre Baskerville', serif;
-                    font-size: 6vw;
-                    text-align: center;
-                    text-shadow: 2px 2px 4px #000000;
-                }
-
-                h2 {
-                    font-size: 4vw;
-                    letter-spacing: 30px;
-                    text-shadow: 2px 2px 4px #000000;
-                    line-height: 120px;
-                }
-            }
-        }
+    .section-title {
+        color: white;
     }
-}
-
-.section-title{
-    color:white;
-}

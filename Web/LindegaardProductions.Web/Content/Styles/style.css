@@ -7,67 +7,58 @@
 
 .landing .hero .caption h1 {
   font-family: 'Libre Baskerville', serif;
-  font-size: 8vw;
+  font-size: 3em;
   text-align: center;
   text-shadow: 2px 2px 4px #000000; }
+  @media (min-width: 576px) {
+    .landing .hero .caption h1 {
+      font-size: 3em; } }
+  @media (min-width: 768px) {
+    .landing .hero .caption h1 {
+      font-size: 5em; } }
+  @media (min-width: 1000px) {
+    .landing .hero .caption h1 {
+      font-size: 7em; } }
 
 .landing .hero .caption h2 {
   font-family: 'Libre Baskerville', serif;
-  font-size: 6vw;
-  letter-spacing: 1.8vw;
+  font-size: 1.6rem;
+  letter-spacing: 0.7rem;
   line-height: 0;
   text-align: center;
-  margin-left: 2vw;
+  margin-left: 10px;
   text-shadow: 2px 2px 4px #000000; }
+  @media (min-width: 576px) {
+    .landing .hero .caption h2 {
+      font-size: 1.7em;
+      letter-spacing: 10px; } }
+  @media (min-width: 768px) {
+    .landing .hero .caption h2 {
+      font-size: 3em;
+      letter-spacing: 14px; } }
+  @media (min-width: 1000px) {
+    .landing .hero .caption h2 {
+      font-size: 4.5em;
+      letter-spacing: 16px;
+      line-height: 8px; } }
 
 .landing .hero .caption h3 {
   color: #8BC53F;
-  line-height: 20vw;
-  font-size: 6.2vw;
+  font-size: 1.2rem;
   text-align: center;
-  font-weight: bolder; }
-  @media only screen and (min-width: 600px) {
+  font-weight: bolder;
+  margin-top: 200px; }
+  @media (min-width: 576px) {
     .landing .hero .caption h3 {
-      color: #8BC53F;
-      line-height: 15vw;
-      font-size: 3.2vw;
-      text-align: center;
-      font-weight: bolder;
-      text-shadow: 1px 2px 8px black; } }
-
-@media screen and (min-width: 600px) {
-  .landing .hero .caption h1 {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 10vw;
-    text-align: center;
-    text-shadow: 2px 2px 4px #000000; }
-  .landing .hero .caption h2 {
-    font-size: 8vw;
-    letter-spacing: 30px;
-    text-shadow: 2px 2px 4px #000000;
-    line-height: 2vw; }
-  .landing .hero .caption h3 {
-    color: #8BC53F;
-    line-height: 15vw;
-    font-size: 3.2vw;
-    text-align: center;
-    font-weight: bolder;
-    text-shadow: 1px 2px 8px black; } }
+      line-height: 6rem;
+      font-size: 1.5rem; } }
+  @media (min-width: 768px) {
+    .landing .hero .caption h3 {
+      line-height: 0;
+      font-size: 2rem; } }
 
 .abouttextcontainer {
   color: rgba(255, 255, 255, 0.87); }
-
-@media screen and (min-width: 1200px) {
-  .landing .hero .capRegular h1 {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 6vw;
-    text-align: center;
-    text-shadow: 2px 2px 4px #000000; }
-  .landing .hero .capRegular h2 {
-    font-size: 4vw;
-    letter-spacing: 30px;
-    text-shadow: 2px 2px 4px #000000;
-    line-height: 120px; } }
 
 .section-title {
   color: white; }
@@ -92,24 +83,15 @@
   transition: 0.5s;
   border-radius: 5px;
   margin: 0 15px; }
-  .btn-landing img {
-    width: 13vw;
-    height: 13vw;
-    margin: 0;
-    padding: 0; }
-  .btn-landing .fa-sliders-h {
-    width: 13vw;
-    height: 15vw;
-    margin: auto;
-    padding-top: 5vw; }
-    .btn-landing .fa-sliders-h .fa {
-      font-weight: 1000; }
-  .btn-landing:hover {
-    background-color: #8BC53F;
-    color: white; }
+  .btn-landing .d-sm-blocl {
+    width: fit-content;
+    height: fit-content; }
+  @media screen and (max-width: 575px) {
+    .btn-landing {
+      border: none;
+      background-color: transparent; } }
 
-.lgCaption
-.redMorebtn {
+.lgCaption .redMorebtn {
   background-color: white; }
 
 .btn-readmore {
@@ -124,105 +106,136 @@
   margin-top: 40px; }
   .btn-list button, .btn-list a {
     float: left; }
-
-.btn-green {
-  display: flex;
-  justify-content: center;
-  font-size: 18px;
-  color: #8BC53F;
-  font-weight: bold;
-  margin: 20px; }
-  .btn-green:hover {
-    color: #fff; }
-
-.btn-contact {
-  background-color: transparent;
-  color: white;
-  text-transform: capitalize;
-  text-decoration: none;
-  font-size: 5.3vw;
-  border: 2px solid #8BC53F;
-  transition: 0.5s;
-  border-radius: 5px;
-  margin: 0 15vh;
-  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.363), 0 0 1rem rgba(0, 0, 0, 0.562); }
-  .btn-contact .fa-sliders-h {
+  .btn-list .fa-music {
     width: 13vw;
-    height: 15vw;
+    height: 23vw;
+    margin: 4px;
+    padding: 0; }
+  .btn-list .fa-sliders-h {
+    width: 13vw;
+    height: 23vw;
     margin: auto;
-    padding-top: 5vw; }
-    .btn-contact .fa-sliders-h .fa {
-      font-weight: 1000; }
-  .btn-contact:hover {
-    background-color: #8BC53F;
-    color: white; }
-
-@media screen and (max-width: 890px) {
-  .card-animated .btn-readmore {
-    font-size: 2.5vh;
-    font-weight: bolder; } }
-
-@media screen and (max-width: 570px) {
-  .card-animated .btn-readmore {
-    font-size: 2.5vh;
-    font-weight: bolder;
-    padding-top: 0; } }
-
-@media screen and (max-width: 890px) {
-  .card-animated .btn-readmore {
-    font-size: 2.5vh;
-    font-weight: bolder;
-    padding-top: 0; } }
-
-@media screen and (min-width: 750px) {
-  .btn-landing {
-    min-width: 20vw;
-    line-height: 3.5vw;
-    padding: 3vw 3vw 4vw 3vw;
-    font-size: 3.5vw;
-    max-width: 300px;
-    max-height: 40px;
-    line-height: 1vw; }
-    .btn-landing:hover {
+    padding-top: 0; }
+  .btn-list .btn-green {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    color: #8BC53F;
+    font-weight: bold;
+    margin: 20px; }
+    .btn-list .btn-green:hover {
+      color: #fff; }
+  .btn-list .btn-contact {
+    background-color: transparent;
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 5.3vw;
+    border: 2px solid #8BC53F;
+    transition: 0.5s;
+    border-radius: 5px;
+    margin: 0 15vh;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.363), 0 0 1rem rgba(0, 0, 0, 0.562); }
+    .btn-list .btn-contact .fa-sliders-h {
+      width: 13vw;
+      height: 15vw;
+      margin: auto;
+      padding-top: 5vw; }
+      .btn-list .btn-contact .fa-sliders-h .fa {
+        font-weight: 1000; }
+    .btn-list .btn-contact:hover {
       background-color: #8BC53F;
-      color: white; } }
+      color: white; }
+  @media screen and (max-width: 890px) {
+    .btn-list .card-animated .btn-readmore {
+      font-size: 2.5vh;
+      font-weight: bolder; } }
+  @media screen and (max-width: 570px) {
+    .btn-list .card-animated .btn-readmore {
+      font-size: 2.5vh;
+      font-weight: bolder;
+      padding-top: 0; } }
+  @media screen and (max-width: 890px) {
+    .btn-list .card-animated .btn-readmore {
+      font-size: 2.5vh;
+      font-weight: bolder;
+      padding-top: 0; } }
+  @media screen and (min-width: 750px) {
+    .btn-list .btn-landing {
+      min-width: 30rem;
+      line-height: 5rem;
+      padding: 1.9vw 3vw 3.3vw 3vw;
+      font-size: 3.5vw;
+      max-width: 300px;
+      max-height: 40px;
+      line-height: 1vw; }
+      .btn-list .btn-landing:hover {
+        background-color: #8BC53F;
+        color: white; }
+      .btn-list .btn-landing a {
+        width: 100%; } }
+  @media screen and (min-width: 752px) {
+    .btn-list .btn-landing {
+      font-size: 3vw;
+      min-width: 10rem;
+      max-height: 40px; } }
+  @media screen and (min-width: 1000px) {
+    .btn-list .btn-landing {
+      font-size: 3vw;
+      min-width: 10rem;
+      max-height: 40px; } }
+  @media screen and (min-width: 1200px) {
+    .btn-list .btn-landing {
+      font-size: 3vw;
+      min-width: 10rem;
+      height: 15px; }
+    .btn-list .btn-contact {
+      font-size: 2.5vw;
+      max-width: 15vh;
+      max-height: 25vh; } }
+  @media screen and (min-width: 1960px) {
+    .btn-list .btn-landing {
+      font-size: 3vw;
+      min-width: 30rem;
+      max-height: 40px; } }
+  @media screen and (min-width: 590px) {
+    .btn-list .btn-contact {
+      font-size: 2.5vw;
+      max-width: 15vh;
+      max-height: 25vh; } }
+  @media screen and (min-width: 590px) {
+    .btn-list .btn-contact {
+      font-size: 2.5vw;
+      max-width: 15vh;
+      max-height: 25vh; } }
+  @media screen and (max-width: 575px) {
+    .btn-list .btn-contact {
+      border: 2px solid transparent; }
+      .btn-list .btn-contact .fa {
+        font-weight: 1000;
+        color: #8BC53F;
+        font-size: 6vh;
+        text-shadow: 1px 2px 8px black; } }
 
-@media screen and (min-width: 1000px) {
-  .btn-landing {
-    font-size: 3vw;
-    max-width: 20px;
-    max-height: 40px; } }
+.navbar {
+  background-color: black; }
+  .navbar .collapse .navbar-nav {
+    margin-left: auto;
+    font-size: 1.2rem;
+    right: 0; }
+  .navbar .navbar-brand {
+    position: relative;
+    top: 0;
+    padding-top: 0; }
+    .navbar .navbar-brand img {
+      height: 50px;
+      width: 50px; }
 
-@media screen and (min-width: 1200px) {
-  .btn-landing {
-    font-size: 3vw;
-    max-width: 15px;
-    max-height: 30px; }
-  .btn-contact {
-    font-size: 2.5vw;
-    max-width: 15vh;
-    max-height: 25vh; } }
-
-@media screen and (min-width: 590px) {
-  .btn-contact {
-    font-size: 2.5vw;
-    max-width: 15vh;
-    max-height: 25vh; } }
-
-@media screen and (min-width: 590px) {
-  .btn-contact {
-    font-size: 2.5vw;
-    max-width: 15vh;
-    max-height: 25vh; } }
-
-@media screen and (max-width: 575px) {
-  .btn-contact {
-    border: 2px solid transparent; }
-    .btn-contact .fa {
-      font-weight: 1000;
-      color: #8BC53F;
-      font-size: 6vh;
-      text-shadow: 1px 2px 8px black; } }
+@media screen and (max-width: 876px) {
+  .navbar .nav-link {
+    margin: auto;
+    font-size: larger;
+    top: 10px; } }
 
 .contactContainer {
   z-index: 5;
