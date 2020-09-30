@@ -329,6 +329,32 @@
     <Content Include="config\Lang\sv-SE.user.xml" />
     <Content Include="config\Lang\zh-CN.user.xml" />
     <Content Include="config\logviewer.searches.config.js" />
+    <Content Include="Content\Media\Favicon\android-icon-144x144.png" />
+    <Content Include="Content\Media\Favicon\android-icon-192x192.png" />
+    <Content Include="Content\Media\Favicon\android-icon-36x36.png" />
+    <Content Include="Content\Media\Favicon\android-icon-48x48.png" />
+    <Content Include="Content\Media\Favicon\android-icon-72x72.png" />
+    <Content Include="Content\Media\Favicon\android-icon-96x96.png" />
+    <Content Include="Content\Media\Favicon\apple-icon-114x114.png" />
+    <Content Include="Content\Media\Favicon\apple-icon-120x120.png" />
+    <Content Include="Content\Media\Favicon\apple-icon-144x144.png" />
+    <Content Include="Content\Media\Favicon\apple-icon-152x152.png" />
+    <Content Include="Content\Media\Favicon\apple-icon-180x180.png" />
+    <Content Include="Content\Media\Favicon\apple-icon-57x57.png" />
+    <Content Include="Content\Media\Favicon\apple-icon-60x60.png" />
+    <Content Include="Content\Media\Favicon\apple-icon-72x72.png" />
+    <Content Include="Content\Media\Favicon\apple-icon-76x76.png" />
+    <Content Include="Content\Media\Favicon\apple-icon-precomposed.png" />
+    <Content Include="Content\Media\Favicon\apple-icon.png" />
+    <Content Include="Content\Media\Favicon\browserconfig.xml" />
+    <Content Include="Content\Media\Favicon\favicon-16x16.png" />
+    <Content Include="Content\Media\Favicon\favicon-32x32.png" />
+    <Content Include="Content\Media\Favicon\favicon-96x96.png" />
+    <Content Include="Content\Media\Favicon\favicon.ico" />
+    <Content Include="Content\Media\Favicon\ms-icon-144x144.png" />
+    <Content Include="Content\Media\Favicon\ms-icon-150x150.png" />
+    <Content Include="Content\Media\Favicon\ms-icon-310x310.png" />
+    <Content Include="Content\Media\Favicon\ms-icon-70x70.png" />
     <Content Include="Content\Media\fullLogo.png" />
     <Content Include="Content\Media\headerLogo.svg" />
     <Content Include="Content\Media\musicianIcon.svg" />
@@ -451,6 +477,7 @@
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
     <Content Include="Content\Styles\Layout\_grid.scss" />
+    <Content Include="Content\Media\Favicon\manifest.json" />
     <None Include="packages.config" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
