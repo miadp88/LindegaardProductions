@@ -11,77 +11,8 @@
     }
 }
 
-.btn-landing{
-    background-color:rgba(0, 0, 0, 0.486)
-    ;
-    color:white;
-    text-transform: capitalize;
-    text-decoration: none;
-    font-size:5.3vw;
-    border:2px solid #8BC53F;
-    transition: 0.5s;
-    border-radius: 5px;
-    margin: 0 15px;
-    
-    
-    img{
-        width: 13vw;
-        height: 13vw;
-        margin: 0;
-        padding: 0;
-        }
-    .fa-sliders-h{
-        width: 13vw;
-        height: 15vw;
-        margin: auto;
-        padding-top: 5vw;
-    
-    .fa{
-        font-weight: 1000;
-    }
-    
-    }
-    &:hover{
-        background-color: #8BC53F;
-        color:white;
-     }
-}
-
-.lgCaption
-.redMorebtn{
-    background-color: white;
-}
-
-.btn-readmore{
-    background:none;
-    border:none;
-    color:rgb(161, 159, 159);
-    font-size:1.2rem;
-   &:hover{
-       color:white;
-   }
-}
-.btn-list{
-    margin-top:40px;
-    
-    button,a{
-        float:left;
-        
-    }
-}
-.btn-green {
-    display: flex;
-    justify-content: center;
-    font-size: 18px;
-    color: #8BC53F;
-    font-weight: bold;
-    margin: 20px;
-    &:hover{
-        color:#fff;
-    }
-}
-.btn-contact {
-    background-color: transparent;
+.btn-landing {
+    background-color: rgba(0, 0, 0, 0.486);
     color: white;
     text-transform: capitalize;
     text-decoration: none;
@@ -89,134 +20,198 @@
     border: 2px solid #8BC53F;
     transition: 0.5s;
     border-radius: 5px;
-    margin: 0 15vh;
-    box-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.363), 0 0 1rem rgba(0, 0, 0, 0.562);
+    margin: 0 15px;
+    .d-sm-blocl{
+        width: fit-content;
+        height: fit-content;
+    }
 
-    .fa-sliders-h {
-        width: 13vw;
-        height: 15vw;
-        margin: auto;
-        padding-top: 5vw;
+    @media screen and (max-width: 575px) {
+        border: none;
+        background-color: transparent;
+    }}
 
-        .fa {
-            font-weight: 1000;
+
+
+
+    .lgCaption .redMorebtn {
+        background-color: white;
+    }
+
+    .btn-readmore {
+        background: none;
+        border: none;
+        color: rgb(161, 159, 159);
+        font-size: 1.2rem;
+
+        &:hover {
+            color: white;
         }
     }
+.btn-green {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    color: #8BC53F;
+    font-weight: bold;
+    margin: 20px;
 
     &:hover {
-        background-color: #8BC53F;
-        color: white;
+        color: #fff;
     }
 }
+.btn-list {
+    margin-top: 40px;
 
-
-
-
-
-@media screen and (max-width: 890px) {
-    .card-animated {
-        .btn-readmore{
-            font-size: 2.5vh;
-            font-weight: bolder;
-        }
-    }
-}
-
-@media screen and (max-width: 570px) {
-    .card-animated {
-        
-        .btn-readmore{
-            font-size: 2.5vh;
-            font-weight: bolder;
-            padding-top: 0;
-           
-
-        }
-        
-    }
-}
-
-@media screen and (max-width: 890px) {
-    .card-animated {
-        
-        .btn-readmore{
-            font-size: 2.5vh;
-            font-weight: bolder;
-            padding-top: 0;
-           
-
-        }
-        
-    }
-}
-
-
-@media screen and (min-width: 750px) {
-    .btn-landing{
-        min-width: 20vw;
-        line-height: 3.5vw;
-        padding: 3vw 3vw 4vw 3vw;
-        font-size: 3.5vw;
-        max-width: 300px;
-        max-height: 40px;
-        line-height: 1vw;
-        &:hover{
-            background-color: #8BC53F;
-            color:white;
-         }
-    }
-  }
-  
-
-@media screen and (min-width: 1000px) {
-    .btn-landing{
-        font-size: 3vw;
-        max-width: 20px;
-        max-height: 40px;
-        
-       
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    .btn-landing{
-        font-size: 3vw;
-        max-width: 15px;
-        max-height: 30px;
-       
+    button, a {
+        float: left;
     }
 
-    .btn-contact{
-        font-size: 2.5vw;
-        max-width: 15vh;
-        max-height: 25vh;}
-  }
 
-  @media screen and (min-width: 590px) {
+    .fa-music {
+        width: 3rem;
+        height: 3rem;
+        margin: 4px;
+        padding: 0;
+    }
 
-    .btn-contact{
-        font-size: 2.5vw;
-        max-width: 15vh;
-        max-height: 25vh;}
-  }
 
-  @media screen and (min-width: 590px) {
+    .fa-sliders-h {
+        width: 3rem;
+        height: 3rem;
+        margin: auto;
+        padding-top: 0;
+    }
 
-    .btn-contact{
-        font-size: 2.5vw;
-        max-width: 15vh;
-        max-height: 25vh;}
-  }
-
-  @media screen and (max-width: 575px) {
-  .btn-contact{
-    border:2px solid transparent;
     
-    .fa{
-        font-weight: 1000;
-        color: #8BC53F;
-        font-size: 6vh;
-        text-shadow: 1px 2px 8px rgb(0, 0, 0);
-    }}}
+
+    .btn-contact {
+        background-color: transparent;
+        color: white;
+        text-transform: capitalize;
+        text-decoration: none;
+        font-size: 5.3vw;
+        border: 2px solid #8BC53F;
+        transition: 0.5s;
+        border-radius: 5px;
+        margin: 0 15vh;
+        box-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.363), 0 0 1rem rgba(0, 0, 0, 0.562);
+
+        .fa-sliders-h {
+            width: 13vw;
+            height: 15vw;
+            margin: auto;
+            padding-top: 5vw;
+
+            .fa {
+                font-weight: 1000;
+            }
+        }
+
+        &:hover {
+            background-color: #8BC53F;
+            color: white;
+        }
+    }
+
+
+
+
+
+
+
+
+
+    @media screen and (min-width: 750px) {
+        .btn-landing {
+            min-width: 30rem;
+            line-height: 5rem;
+            padding: 1.9vw 3vw 3.3vw 3vw;
+            font-size: 3.5vw;
+            max-width: 300px;
+            max-height: 40px;
+            line-height: 1vw;
+
+            &:hover {
+                background-color: #8BC53F;
+                color: white;
+            }
+
+            a {
+                width: 100%;
+            }
+        }
+    }
+
+    @media screen and (min-width: 752px) {
+        .btn-landing {
+            font-size: 3vw;
+            min-width: 10rem;
+            max-height: 40px;
+        }
+    }
+
+
+    @media screen and (min-width: 1000px) {
+        .btn-landing {
+            font-size: 3vw;
+            min-width: 10rem;
+            max-height: 40px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .btn-landing {
+            font-size: 3vw;
+            min-width: 10rem;
+            height: 15px;
+        }
+
+        .btn-contact {
+            font-size: 2.5vw;
+            max-width: 15vh;
+            max-height: 25vh;
+        }
+    }
+
+    @media screen and (min-width: 1960px) {
+        .btn-landing {
+            font-size: 3vw;
+            min-width: 30rem;
+            max-height: 40px;
+        }
+    }
+
+    @media screen and (min-width: 590px) {
+
+        .btn-contact {
+            font-size: 2.5vw;
+            max-width: 15vh;
+            max-height: 25vh;
+        }
+    }
+
+    @media screen and (min-width: 590px) {
+
+        .btn-contact {
+            font-size: 2.5vw;
+            max-width: 15vh;
+            max-height: 25vh;
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        .btn-contact {
+            border: 2px solid transparent;
+
+            .fa {
+                font-weight: 1000;
+                color: #8BC53F;
+                font-size: 6vh;
+                text-shadow: 1px 2px 8px rgb(0, 0, 0);
+            }
+        }
+    }
+}
     
    

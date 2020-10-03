@@ -62,7 +62,7 @@ namespace LindegaardProductions.Web.Models.ModelsBuilder
 		// properties
 
 		///<summary>
-		/// Sub Heading
+		/// Sub Heading: Placed beneath the title
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.4")]
 		[ImplementPropertyType("subHeading")]
@@ -73,7 +73,7 @@ namespace LindegaardProductions.Web.Models.ModelsBuilder
 		public static string GetSubHeading(IHeader that) => that.Value<string>("subHeading");
 
 		///<summary>
-		/// Title
+		/// Title: Title is shown in hero area. And is the main title for the page
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.4")]
 		[ImplementPropertyType("title")]
@@ -84,7 +84,7 @@ namespace LindegaardProductions.Web.Models.ModelsBuilder
 		public static string GetTitle(IHeader that) => that.Value<string>("title");
 
 		///<summary>
-		/// Video: Select a video for the header.
+		/// Video: Select a video for the header. It will play in a loop in the background.
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.4")]
 		[ImplementPropertyType("video")]

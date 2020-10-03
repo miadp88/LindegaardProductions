@@ -16,6 +16,16 @@
                 <a href="@link.Url" class="nav-item nav-link @(link.Active ? "active" : string.Empty)">@link.Name</a>
             }
             <a href="@Model.Url" class="nav-item nav-link @(Model.Active ? "active" : string.Empty)">@Model.Name</a>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">@this.Global.GetLanguages.Where(x=> x.Current == true).FirstOrDefault().Name</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown09">
+                    @foreach (var lang in this.Global.GetLanguages.Where(x=> x.Current == false))
+                    {
+                        <a class="dropdown-item" href="@lang.Url"><span>@lang.Name</span></a>
+                    }
+                </div>
+            </li>
         </div>
     </div>
 </nav>

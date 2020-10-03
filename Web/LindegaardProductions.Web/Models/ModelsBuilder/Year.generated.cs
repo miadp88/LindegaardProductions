@@ -45,7 +45,7 @@ namespace LindegaardProductions.Web.Models.ModelsBuilder
 		// properties
 
 		///<summary>
-		/// Title: The Year
+		/// Title: For displaying the year, this is used mostly for dividing up the news.
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.4")]
 		[ImplementPropertyType("title")]

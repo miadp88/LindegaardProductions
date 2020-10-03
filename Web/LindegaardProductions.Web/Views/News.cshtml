@@ -12,30 +12,8 @@
         <div class="col-12">
             <main class="main-content">
                 <div class="row">
-                    <div class="col-lg-8 col-sm-12">
-                        <div class="row">
-                            <div class="col-12">
-                                <ul class="year-selection">
-                                    @foreach (var item in Model.YearsAvailable)
-                                    {
-                                        <li><a class="btn btn-primary @(item == Model.ActiveYear.ToString() ? "active" : string.Empty)" href="?year=@item">@item</a></li>
-                                    }
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="row news d-flex justify-content-center">
-                            @foreach (var item in Model.Children)
-                            {
-                                <div class="card newscard m-3  p-0 col-lg-3 col-md-4 col-sm-12" style="background-color: #353131 ;" data-aos="zoom-in" data-aos-duration="1500">
-                                    <img class="card-img-top" src="@item.MetaImage.GetImageUrlOrDefault()?width=500&quality=50" alt="@item.MetaImage.GetImageAltText()">
-                                    <div class="card-body">
-                                        <h5 class="card-title font-weight-bolder">@item.Title</h5>
-                                        <p class="card-text ">@item.MetaDescription</p>
-                                        <a href="@item.Url" class="btn btn-primary">Read more</a><!--TODO: Dictionary-->
-                                    </div>
-                                </div>
-                            }
-                        </div>
+                    <div class="col-lg-8 col-sm-12" id="newsCards">
+                        @Html.Partial("_NewsCards", Model.NewsCards)
                     </div>
                     <div class="col-lg-4 col-sm-12">
                         <!--Aside-->
@@ -48,7 +26,4 @@
     </div>
 </div>
 
-
-
-
-
+@Html.Partial("_Footer", this.Global.Footer)

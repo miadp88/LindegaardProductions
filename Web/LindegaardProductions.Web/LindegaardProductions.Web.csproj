@@ -329,11 +329,37 @@
     <Content Include="config\Lang\sv-SE.user.xml" />
     <Content Include="config\Lang\zh-CN.user.xml" />
     <Content Include="config\logviewer.searches.config.js" />
+    <Content Include="Content\Media\Favicon\android-icon-144x144.png" />
+    <Content Include="Content\Media\Favicon\android-icon-192x192.png" />
+    <Content Include="Content\Media\Favicon\android-icon-36x36.png" />
+    <Content Include="Content\Media\Favicon\android-icon-48x48.png" />
+    <Content Include="Content\Media\Favicon\android-icon-72x72.png" />
+    <Content Include="Content\Media\Favicon\android-icon-96x96.png" />
+    <Content Include="Content\Media\Favicon\apple-icon-114x114.png" />
+    <Content Include="Content\Media\Favicon\apple-icon-120x120.png" />
+    <Content Include="Content\Media\Favicon\apple-icon-144x144.png" />
+    <Content Include="Content\Media\Favicon\apple-icon-152x152.png" />
+    <Content Include="Content\Media\Favicon\apple-icon-180x180.png" />
+    <Content Include="Content\Media\Favicon\apple-icon-57x57.png" />
+    <Content Include="Content\Media\Favicon\apple-icon-60x60.png" />
+    <Content Include="Content\Media\Favicon\apple-icon-72x72.png" />
+    <Content Include="Content\Media\Favicon\apple-icon-76x76.png" />
+    <Content Include="Content\Media\Favicon\apple-icon-precomposed.png" />
+    <Content Include="Content\Media\Favicon\apple-icon.png" />
+    <Content Include="Content\Media\Favicon\browserconfig.xml" />
+    <Content Include="Content\Media\Favicon\favicon-16x16.png" />
+    <Content Include="Content\Media\Favicon\favicon-32x32.png" />
+    <Content Include="Content\Media\Favicon\favicon-96x96.png" />
+    <Content Include="Content\Media\Favicon\favicon.ico" />
+    <Content Include="Content\Media\Favicon\ms-icon-144x144.png" />
+    <Content Include="Content\Media\Favicon\ms-icon-150x150.png" />
+    <Content Include="Content\Media\Favicon\ms-icon-310x310.png" />
+    <Content Include="Content\Media\Favicon\ms-icon-70x70.png" />
     <Content Include="Content\Media\fullLogo.png" />
     <Content Include="Content\Media\headerLogo.svg" />
     <Content Include="Content\Media\musicianIcon.svg" />
     <Content Include="Content\Media\musicianSmallIcon.svg" />
-    <Content Include="Content\Media\placeholder.jpg" />
+    <Content Include="Content\Media\placeholder.png" />
     <Content Include="Content\Styles\style.css">
       <DependentUpon>style.scss</DependentUpon>
     </Content>
@@ -343,6 +369,7 @@
     <Content Include="Global.asax" />
     <Content Include="Scripts\Custom\animation.js" />
     <Content Include="Scripts\Custom\audioPlayer.js" />
+    <Content Include="Scripts\Custom\custom.js" />
     <Content Include="Scripts\Plugins\jquery.validate.min.js" />
     <Content Include="Scripts\Plugins\sweetalert2.all.min.js" />
     <Content Include="Web.config" />
@@ -362,6 +389,7 @@
     <Compile Include="Business\Helpers\TeaserPageHelper.cs" />
     <Compile Include="Business\Mappers\NavigationItemMapper.cs" />
     <Compile Include="Business\Services\IInjected.cs" />
+    <Compile Include="Business\Services\LanguageVariantService.cs" />
     <Compile Include="Business\ViewPages\AbstractViewPage.cs" />
     <Compile Include="Controllers\ArticleController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
@@ -371,12 +399,15 @@
     <Compile Include="Controllers\NotFoundController.cs" />
     <Compile Include="Controllers\Shared\PageControllerBase.cs" />
     <Compile Include="Controllers\Surface\ContactSurfaceController.cs" />
+    <Compile Include="Controllers\Surface\NewsSurfaceController.cs" />
     <Compile Include="Controllers\TextPageController.cs" />
     <Compile Include="Controllers\YearController.cs" />
+    <Compile Include="Models\Helpers\CultureUrlModel.cs" />
     <Compile Include="Models\Helpers\FooterModel.cs" />
     <Compile Include="Models\Helpers\GlobalModel.cs" />
     <Compile Include="Models\Helpers\HeaderModel.cs" />
     <Compile Include="Models\Helpers\NavigationItemModel.cs" />
+    <Compile Include="Models\Helpers\NewsCardsModel.cs" />
     <Compile Include="Models\Helpers\SeoModel.cs" />
     <Compile Include="Models\Helpers\TeaserPageModel.cs" />
     <Compile Include="Models\ModelsBuilder\Article.generated.cs" />
@@ -446,6 +477,7 @@
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
     <Content Include="Content\Styles\Layout\_grid.scss" />
+    <Content Include="Content\Media\Favicon\manifest.json" />
     <None Include="packages.config" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
@@ -471,6 +503,8 @@
     <Content Include="Views\Partials\_Aside.cshtml" />
     <Content Include="Views\Partials\_Analytics.cshtml" />
     <Content Include="Views\Partials\_Footer.cshtml" />
+    <Content Include="Views\Partials\_NewsCards.cshtml" />
+    <Content Include="Views\Partials\_Spinner.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

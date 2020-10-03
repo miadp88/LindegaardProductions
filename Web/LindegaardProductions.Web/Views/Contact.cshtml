@@ -4,5 +4,64 @@
 }
 
 
-@Html.Partial("_Navigation", this.Global.NavigationItems)
-@Html.Partial("_Header")
+<div class="container-fluid no-space topnav " id="myTopnav">
+    @Html.Partial("_Navigation", this.Global.NavigationItems)
+    <div class="row no-space">
+        <div class="col-12 landing no-space">
+            <div class="hero">
+                @if (this.Global.Header.Video != null)
+                {
+                    <video loop poster muted autoplay preload="auto">
+                        <source src="@this.Global.Header.Video.Url" type="video/mp4">
+                        @Umbraco.GetDictionaryValue(DictionaryConstants.TitleUnsupportedVideo)
+                    </video>
+
+                }
+                <div class="container-fluid col-lg-8 col-md-10 col-sm-12 contactContainer" data-aos="zoom-in" data-aos-duration="1500">
+                    <h1 class="contactMe text-center contactMe text-white">@Umbraco.GetDictionaryValue(DictionaryConstants.TitleContactMe)</h1>
+                    <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-1 col-sm-12">
+                        <div class="card contactCard">
+                            <!--Form-->
+                            @using (Ajax.BeginForm("SendMail", "ContactSurface", new { }, new AjaxOptions { HttpMethod = "post", OnBegin = "ShowSpinner()", OnComplete = "HideSpinner()", OnFailure = "ShowErrorMessage('Kunne ikke sende besked på nuværende tidspunkt.')", OnSuccess = "ShowSuccessMessage('Besked afsendt.')" }, new { @class = "contactWrapper" }))
+                            {
+                                <div class="form-group">
+                                    <label for="name">@Umbraco.GetDictionaryValue(DictionaryConstants.FormName)</label>
+                                    <input type="text" class="form-control" name="name" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">@Umbraco.GetDictionaryValue(DictionaryConstants.FormEmail)</label>
+                                    <input type="email" class="form-control" name="email" placeholder="name@example.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">@Umbraco.GetDictionaryValue(DictionaryConstants.FormSubject)</label>
+                                    <input type="text" class="form-control" name="subject" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="country">@Umbraco.GetDictionaryValue(DictionaryConstants.FormCountry)</label>
+                                    <input type="text" class="form-control" name="country" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">@Umbraco.GetDictionaryValue(DictionaryConstants.FormMessage)</label>
+                                    <textarea class="form-control" rows="3" name="message" required></textarea>
+                                </div>
+                                <input type="hidden" name="pageId" value="@Model.CurrentPage.Id" />
+                                <div class="form-group">
+                                    <div class="g-recaptcha" data-sitekey="@Umbraco.GetDictionaryValue(DictionaryConstants.RecaptchaSiteKey)"></div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-contact ">
+                                        <span class="d-none d-sm-block ">@Umbraco.GetDictionaryValue(DictionaryConstants.FormSend)</span>
+                                        <span class="d-sm-none"><i class="fa fa-paper-plane" aria-hidden="true"></i></span>
+                                    </button>
+                                </div>
+                            }
+                            <!--Form-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Html.Partial("_Footer", this.Global.Footer)

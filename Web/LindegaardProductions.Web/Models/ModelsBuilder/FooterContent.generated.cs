@@ -52,7 +52,7 @@ namespace LindegaardProductions.Web.Models.ModelsBuilder
 		public global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.Models.Link> Links => this.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.Models.Link>>("links");
 
 		///<summary>
-		/// Title
+		/// Title: Title of the links
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.4")]
 		[ImplementPropertyType("title")]
