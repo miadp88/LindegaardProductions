@@ -16,7 +16,7 @@ namespace LindegaardProductions.Web.Business.Helpers
                 MailMessage mail = new MailMessage(from, to);
 
                 SmtpClient client = new SmtpClient();
-                client.Port = 25;
+                client.Port = 587;
                 client.DeliveryMethod = SmtpDeliveryMethod.Network;
                 mail.Subject = subject;
                 mail.Body = body;
