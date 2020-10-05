@@ -39,23 +39,27 @@
   @media (min-width: 1000px) {
     .landing .hero .caption h2 {
       font-size: 4.5em;
-      letter-spacing: 16px;
-      line-height: 0.5em; } }
+      letter-spacing: 16px; } }
 
 .landing .hero .caption h3 {
   color: #8BC53F;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: center;
   font-weight: bolder;
-  margin-top: 200px; }
+  margin-top: 200px;
+  line-height: 0; }
   @media (min-width: 576px) {
     .landing .hero .caption h3 {
-      line-height: 6rem;
-      font-size: 1.5rem; } }
+      font-size: 1rem;
+      margin-top: 50px; } }
   @media (min-width: 768px) {
     .landing .hero .caption h3 {
-      line-height: 0;
-      font-size: 2rem; } }
+      font-size: 1rem;
+      margin-top: 50px; } }
+  @media (min-width: 987px) {
+    .landing .hero .caption h3 {
+      font-size: 1.2rem;
+      margin-top: 50px; } }
 
 .abouttextcontainer {
   color: rgba(255, 255, 255, 0.87); }
