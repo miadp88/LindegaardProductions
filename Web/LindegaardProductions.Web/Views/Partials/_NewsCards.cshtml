@@ -22,7 +22,7 @@
             <img class="card-img-top" src="@item.MetaImage.GetImageUrlOrDefault()?width=500&quality=50" alt="@item.MetaImage.GetImageAltText()">
             <div class="card-body">
                 <h5 class="card-title font-weight-bolder">@item.Title</h5>
-                <p class="card-text ">@item.MetaDescription</p>
+                <p class="card-text ">@item.MetaDescription.Elipsis(100)</p>
                 <a href="@item.Url" class="btn btn-primary">@Umbraco.GetDictionaryValue(DictionaryConstants.ButtonReadMore)</a>
             </div>
         </div>

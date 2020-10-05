@@ -62,7 +62,7 @@ namespace LindegaardProductions.Web.Models.ModelsBuilder
 		// properties
 
 		///<summary>
-		/// Meta Description
+		/// Meta Description: A short description of the content of the page. Will be shown on google and facebook etc. As well on cards on the website.
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.4")]
 		[ImplementPropertyType("metaDescription")]
@@ -73,7 +73,7 @@ namespace LindegaardProductions.Web.Models.ModelsBuilder
 		public static string GetMetaDescription(ISEO that) => that.Value<string>("metaDescription");
 
 		///<summary>
-		/// Meta Image
+		/// Meta Image: The image of the page, will be seen on cards, and when sharing the page on social media, or searched on google
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.4")]
 		[ImplementPropertyType("metaImage")]
@@ -84,7 +84,7 @@ namespace LindegaardProductions.Web.Models.ModelsBuilder
 		public static global::Umbraco.Core.Models.PublishedContent.IPublishedContent GetMetaImage(ISEO that) => that.Value<global::Umbraco.Core.Models.PublishedContent.IPublishedContent>("metaImage");
 
 		///<summary>
-		/// MetaTitle
+		/// MetaTitle: Title that will be seen on google or facebook etc. when sharing the page. And as the title in the tab in your browser.
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.4")]
 		[ImplementPropertyType("metaTitle")]

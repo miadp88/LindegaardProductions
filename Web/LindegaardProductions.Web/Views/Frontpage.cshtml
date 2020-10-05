@@ -40,7 +40,7 @@
                                                             <a href="@item.Url"> @item.Title</a>
                                                         </h3>
                                                         <p class="card-description">
-                                                            @item.MetaDescription
+                                                            @item.MetaDescription.Elipsis(140)
                                                         </p>
                                                         <a href="@item.Url" class="btn btn-green">@Umbraco.GetDictionaryValue(DictionaryConstants.ButtonReadMore)</a>
                                                     </div>
@@ -62,7 +62,7 @@
                                                 </div>
                                                 <div class="card_content">
                                                     <h2 class="card_title">@item.Title</h2>
-                                                    <p class="card_text">@item.MetaDescription</p>
+                                                    <p class="card_text">@item.MetaDescription.Elipsis(100)</p>
                                                     <a href="@item.Url" class="btn card_btn">@Umbraco.GetDictionaryValue(DictionaryConstants.ButtonReadMore)</a>
                                                 </div>
                                             </div>

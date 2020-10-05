@@ -19,14 +19,14 @@
                 }
                 <div class="container-fluid col-lg-8 col-md-10 col-sm-12 contactContainer" data-aos="zoom-in" data-aos-duration="1500">
                     <h1 class="contactMe text-center contactMe text-white">@Umbraco.GetDictionaryValue(DictionaryConstants.TitleContactMe)</h1>
-                    <div class="col-12">
+                    <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-1 col-sm-12">
                         <div class="card contactCard">
                             <!--Form-->
                             @using (Ajax.BeginForm("SendMail", "ContactSurface", new { }, new AjaxOptions { HttpMethod = "post", OnBegin = "ShowSpinner()", OnComplete = "HideSpinner()", OnFailure = "ShowErrorMessage('Kunne ikke sende besked på nuværende tidspunkt.')", OnSuccess = "ShowSuccessMessage('Besked afsendt.')" }, new { @class = "contactWrapper" }))
                             {
                                 <div class="form-group">
                                     <label for="name">@Umbraco.GetDictionaryValue(DictionaryConstants.FormName)</label>
-                                    <input type="text" class="form-control" name="name" required/>
+                                    <input type="text" class="form-control" name="name" required />
                                 </div>
                                 <div class="form-group">
                                     <label for="email">@Umbraco.GetDictionaryValue(DictionaryConstants.FormEmail)</label>
@@ -63,3 +63,5 @@
         </div>
     </div>
 </div>
+
+@Html.Partial("_Footer", this.Global.Footer)

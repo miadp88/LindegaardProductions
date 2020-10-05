@@ -9,6 +9,7 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using Umbraco.Core.Cache;
 using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 
@@ -16,12 +17,12 @@ namespace LindegaardProductions.Web.Business.Helpers
 {
     public class GlobalModelHelper : IInjected
     {
-        public static GlobalModel GetGlobalModel(UmbracoHelper umbracoHelper, IPublishedContent currentPage, LandingPage landingPage)
+        public static GlobalModel GetGlobalModel(UmbracoHelper umbracoHelper, IPublishedContent currentPage, LandingPage landingPage, AppCaches appCaches)
         {
             string currentFrontPageLink = string.Empty;
             string newsPageLink = string.Empty;
 
-            if ((currentPage is LandingPage) == false)
+            if ((currentPage is LandingPage) == false && currentPage is NotFound == false)
             {
                 currentFrontPageLink = currentPage.AncestorOrSelf<Frontpage>().Url;
             }
@@ -31,14 +32,21 @@ namespace LindegaardProductions.Web.Business.Helpers
                 CurrentFrontpageLink = currentFrontPageLink,
                 Header = GetHeader(currentPage),
                 Seo = GetSeo(currentPage),
-                NavigationItems = GetNavigation(landingPage, currentPage, umbracoHelper),
+                NavigationItems = currentPage is NotFound == false ? GetNavigation(landingPage, currentPage, umbracoHelper) : null,
                 ListenBlock = GetListenBlock(currentPage, umbracoHelper),
                 GalleryBlock = GetGalleryBlock(currentPage, umbracoHelper),
                 NewestArticlesBlock = GetNewestArticles(currentPage, umbracoHelper),
                 Footer = GetFooter(landingPage),
+                GetLanguages = GetLanguageSelect(appCaches, currentPage)
             };
 
             return model;
+        }
+
+        private static IEnumerable<CultureUrlModel> GetLanguageSelect(AppCaches appCaches, IPublishedContent currentPage)
+        {
+            var currentCulture = System.Threading.Thread.CurrentThread.CurrentCulture;
+            return LanguageVariantService.GetCurrentLanguageList(currentPage, currentCulture.Name, appCaches);
         }
 
         private static FooterModel GetFooter(LandingPage landingPage)
