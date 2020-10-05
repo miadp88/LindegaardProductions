@@ -376,7 +376,7 @@
   .card-blog .card-image {
     margin: 0;
     border-radius: 6px;
-    height: 250px;
+    height: auto;
     position: relative;
     z-index: 1; }
     .card-blog .card-image .img {
