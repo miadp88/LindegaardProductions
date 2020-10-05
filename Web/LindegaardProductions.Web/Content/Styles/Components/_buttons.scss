@@ -16,10 +16,10 @@
     color: white;
     text-transform: capitalize;
     text-decoration: none;
-    font-size: 5.3vw;
+    font-size: 1em;
     border: 2px solid #8BC53F;
     transition: 0.5s;
-    border-radius: 5px;
+    border-radius: 55px;
     margin: 0 15px;
     .d-sm-blocl{
         width: fit-content;
@@ -124,10 +124,9 @@
 
     @media screen and (min-width: 750px) {
         .btn-landing {
-            min-width: 30rem;
             line-height: 0em;
             padding: 1em;
-            font-size: 3.5vw;
+            font-size: 1em;
 
 
             &:hover {
@@ -143,18 +142,16 @@
 
     @media screen and (min-width: 752px) {
         .btn-landing {
-            font-size: 3vw;
+            font-size: 1.5em;
             min-width: 10rem;
-            max-height: 40px;
         }
     }
 
 
     @media screen and (min-width: 1000px) {
         .btn-landing {
-            font-size: 3vw;
+            font-size: 1.5em;
             min-width: 10rem;
-            max-height: 40px;
         }
     }
 
@@ -162,13 +159,11 @@
         .btn-landing {
             font-size: 2em;
             min-width: 10rem;
-            max-height: 10px;
         }
 
         .btn-contact {
             font-size: 2.5vw;
             max-width: 15vh;
-            max-height: 25vh;
         }
     }
 
@@ -176,7 +171,6 @@
         .btn-landing {
             font-size: 2em;
             min-width: 10rem;
-            max-height: 10px;
         }
     }
 
