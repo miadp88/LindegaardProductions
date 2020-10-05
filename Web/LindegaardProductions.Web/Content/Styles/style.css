@@ -24,7 +24,7 @@
   font-family: 'Libre Baskerville', serif;
   font-size: 1.6rem;
   letter-spacing: 0.7rem;
-  line-height: 0;
+  line-height: 0.5em;
   text-align: center;
   margin-left: 10px;
   text-shadow: 2px 2px 4px #000000; }
@@ -40,7 +40,7 @@
     .landing .hero .caption h2 {
       font-size: 4.5em;
       letter-spacing: 16px;
-      line-height: 8px; } }
+      line-height: 0.5em; } }
 
 .landing .hero .caption h3 {
   color: #8BC53F;
