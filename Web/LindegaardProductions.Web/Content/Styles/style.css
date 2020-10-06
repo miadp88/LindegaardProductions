@@ -540,6 +540,26 @@ footer .faButtomWrap {
   display: flex;
   justify-content: center; }
 
+.scolDownIcon {
+  width: 100%;
+  text-align: center; }
+  .scolDownIcon .fa-arrow-circle-down {
+    position: absolute;
+    color: #8bc53f;
+    font-size: 2em;
+    opacity: 0.5;
+    z-index: 5000;
+    top: 530%; }
+    @media (min-width: 576px) {
+      .scolDownIcon .fa-arrow-circle-down {
+        top: 530%; } }
+    @media (min-width: 768px) {
+      .scolDownIcon .fa-arrow-circle-down {
+        top: 370%; } }
+    @media (min-width: 1000px) {
+      .scolDownIcon .fa-arrow-circle-down {
+        top: 280%; } }
+
 .umb-grid .grid-section img {
   max-width: 100%; }
 
