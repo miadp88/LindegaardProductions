@@ -78,6 +78,11 @@
     font-weight: bold;
     margin: 20px;
 
+    &:focus, &:active {
+        outline: none !important;
+        box-shadow: none;
+    }
+
     &:hover {
         color: #fff;
     }

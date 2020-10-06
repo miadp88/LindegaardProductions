@@ -118,6 +118,11 @@
             cursor: pointer;
             border: 1px solid rgba(141, 139, 139, 0.39);
             background: transparent;
+
+            &:focus, &:active {
+                outline: none !important;
+                box-shadow: none;
+            }
         }
 
         .card_btn:hover {
