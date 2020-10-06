@@ -133,6 +133,11 @@
         color: white;
     }
 
+    &.active {
+        background-color: #8BC53F;
+        color:white;
+    }
+
     &:hover {
         color: #fff;
     }
