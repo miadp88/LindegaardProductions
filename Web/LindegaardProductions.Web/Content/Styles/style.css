@@ -67,8 +67,24 @@
 .section-title {
   color: white; }
 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #8bc53f;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 55px;
+  opacity: .6; }
+
 .btn-primary {
-  background-color: transparent;
+  background-color: #8bc53f;
   color: #fff;
   text-transform: capitalize;
   text-decoration: none;
@@ -297,7 +313,7 @@
     .news .newscard .card-body .card-text {
       color: rgba(255, 255, 255, 0.562); }
     .news .newscard .card-body a {
-      background-color: transparent;
+      background-color: #8bc53f;
       color: white;
       text-transform: capitalize;
       text-decoration: none;
@@ -328,7 +344,7 @@
   padding: 1rem; }
 
 .card_plain {
-  background-color: 494848;
+  background-color: #494848;
   border-radius: 0.25rem;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   overflow: hidden; }
