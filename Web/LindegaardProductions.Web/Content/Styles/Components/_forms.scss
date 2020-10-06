@@ -1,6 +1,7 @@
 .contactContainer {
     z-index: 4;
     padding-top: 12vh;
+    width:100%;
 
     .contactCard {
         position: relative;
@@ -12,7 +13,7 @@
         color: #aaa;
         box-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.5), 0 0 1rem rgba(0,0,0,0.2);
         overflow: hidden;
-        margin: 20px;
+        margin: 0px;
 
         @media only screen and (max-width: 790px){
             margin:0px;
@@ -23,3 +24,14 @@
         }
     }
 }
+
+@media (min-width: 768px) {
+    .offset-md-1 {
+    margin-left: 0px;
+}}
+
+@media (min-width: 768px) {
+    .col-md-8 {
+    max-width: 80%;
+    margin: auto;
+}}
