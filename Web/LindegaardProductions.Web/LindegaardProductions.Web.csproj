@@ -358,7 +358,6 @@
     <Content Include="Content\Media\fullLogo.png" />
     <Content Include="Content\Media\headerLogo.svg" />
     <Content Include="Content\Media\main-logo.svg" />
-    <Content Include="Content\Media\main-logo.png" />
     <Content Include="Content\Media\musicianIcon.svg" />
     <Content Include="Content\Media\musicianSmallIcon.svg" />
     <Content Include="Content\Media\placeholder.png" />
