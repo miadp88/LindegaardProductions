@@ -245,11 +245,11 @@
       height: 20vh; }
 
 @media (min-width: 768px) {
-  .offset-md-1 {
+  .marginContolContact {
     margin-left: 0px; } }
 
 @media (min-width: 768px) {
-  .col-md-8 {
+  .mCC {
     max-width: 80%;
     margin: auto; } }
 
