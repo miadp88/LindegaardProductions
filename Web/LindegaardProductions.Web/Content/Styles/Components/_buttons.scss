@@ -15,6 +15,8 @@
     opacity: .6;
 }
 
+
+
 .btn-primary {
     background-color: #8bc53f;
     color: #fff;
@@ -120,17 +122,21 @@
     font-size: 18px;
     color: #8BC53F;
     font-weight: bold;
+    box-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.363), 0 0 1rem rgba(0, 0, 0, 0.562);
     margin: 20px;
+    border: solid #8BC53F 2px;
 
     &:focus, &:active {
-        outline: none !important;
+        border: none !important;
         box-shadow: none;
+        background-color: #8BC53F;
+        color: white;
     }
 
     &:hover {
         color: #fff;
-        }
     }
+}
 .btn-list {
     margin-top: 40px;
 

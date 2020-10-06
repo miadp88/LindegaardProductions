@@ -154,10 +154,14 @@
   font-size: 18px;
   color: #8BC53F;
   font-weight: bold;
-  margin: 20px; }
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.363), 0 0 1rem rgba(0, 0, 0, 0.562);
+  margin: 20px;
+  border: solid #8BC53F 2px; }
   .btn-green:focus, .btn-green:active {
-    outline: none !important;
-    box-shadow: none; }
+    border: none !important;
+    box-shadow: none;
+    background-color: #8BC53F;
+    color: white; }
   .btn-green:hover {
     color: #fff; }
 

@@ -8,7 +8,7 @@
                 <li>
                     @using (Ajax.BeginForm("GetNews", "NewsSurface", new { pageId = Model.PageId, year = item }, new AjaxOptions { HttpMethod = "post", OnBegin = "ShowSpinner()", OnComplete = "HideSpinner()", OnFailure = "ShowErrorMessage('Kunne ikke sortere nyhederne på år.')", OnSuccess = "ShowSuccessMessage('Nyheder sorteret.')", UpdateTargetId = "newsCards" }))
                     {
-                        <button type="submit" class="btn btn-primary @(item == Model.ActiveYear.ToString() ? "active" : string.Empty)">@item</button>
+                        <button type="submit" class="btn btn-green @(item == Model.ActiveYear.ToString() ? "active" : string.Empty)">@item</button>
                     }
                 </li>
             }
