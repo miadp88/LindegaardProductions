@@ -11,7 +11,7 @@
     }
 }
 
-.btn-landing {
+.btn-landing{
     background-color: rgba(0, 0, 0, 0.486);
     color: white;
     text-transform: capitalize;
@@ -81,30 +81,36 @@
         height: 3rem;
         margin: auto;
         padding-top: 0;
+    }}
+
+
+
+.fg-btn {
+    width:100%;
+    display: flex;
+    justify-content: center;
+
     }
 
-
-
     .btn-contact {
-        background-color: transparent;
+        background-color: #8BC53F;
         color: white;
         text-transform: capitalize;
         text-decoration: none;
-        font-size: 5.3vw;
-        border: 2px solid #8BC53F;
+        font-size: 20px;
+        border: 2px solid #8BC53F !important;
         transition: 0.5s;
-        border-radius: 5px;
-        margin: 0 15vh;
+        border-radius: 75px;
         box-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.363), 0 0 1rem rgba(0, 0, 0, 0.562);
+        padding: .4em;
 
         .fa-sliders-h {
-            width: 13vw;
-            height: 15vw;
+            width: 17em;
+            height: 15em;
             margin: auto;
-            padding-top: 5vw;
 
             .fa {
-                font-weight: 1000;
+                font-weight: 100;
             }
         }
 
@@ -113,7 +119,6 @@
             color: white;
         }
     }
-
 
 
 
@@ -161,49 +166,44 @@
             min-width: 10rem;
         }
 
-        .btn-contact {
-            font-size: 2.5vw;
-            max-width: 15vh;
-        }
+
     }
 
     @media screen and (min-width: 1960px) {
         .btn-landing {
-            font-size: 2em;
-            min-width: 10rem;
+            font-size: 1em;
+
+
         }
     }
+
+
+    
 
     @media screen and (min-width: 590px) {
 
         .btn-contact {
-            font-size: 2.5vw;
-            max-width: 15vh;
-            max-height: 25vh;
-        }
-    }
-
-    @media screen and (min-width: 590px) {
-
-        .btn-contact {
-            font-size: 2.5vw;
-            max-width: 15vh;
-            max-height: 25vh;
+            width: 100px;
+            height: 50px;
+            margin-top: 1em;
         }
     }
 
     @media screen and (max-width: 575px) {
         .btn-contact {
             border: 2px solid transparent;
+            width: 3em;
+            height: 3em;
+            margin-top: 1em;
 
             .fa {
                 font-weight: 1000;
                 color: #8BC53F;
-                font-size: 6vh;
+                font-size: 6em;
                 text-shadow: 1px 2px 8px rgb(0, 0, 0);
             }
         }
     }
-}
+
     
    
