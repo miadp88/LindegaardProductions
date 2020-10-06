@@ -3,8 +3,9 @@
 
 .aside-blocks {
     background-color: #2A2727;
-    overflow:hidden;
-    margin-top:20px;
+    overflow: hidden;
+    margin-top: 20px;
+
     .aside__block {
         &-title {
             background-color: black;
@@ -18,15 +19,22 @@
         }
 
         &-content {
-            margin:20px;
+            margin: 20px;
+
+            @media only screen and (max-width: 790px){
+                margin:5px;
+            }
+
             ul {
                 list-style: none;
-                margin-bottom:40px;
+                margin-bottom: 40px;
+
                 li {
                     list-style: none;
                     margin: 15px 0;
                     color: white;
-                    cursor:pointer;
+                    cursor: pointer;
+
                     span {
                         margin-right: 10px;
                     }
@@ -36,6 +44,10 @@
             .simple-player {
                 margin-top: 25px;
                 margin-left: 40px;
+
+                @media only screen and (max-width: 790px) {
+                    margin-left: -3px;
+                }
             }
         }
 

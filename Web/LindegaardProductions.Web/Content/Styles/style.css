@@ -231,6 +231,9 @@
     box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.5), 0 0 1rem rgba(0, 0, 0, 0.2);
     overflow: hidden;
     margin: 20px; }
+    @media only screen and (max-width: 790px) {
+      .contactContainer .contactCard {
+        margin: 0px; } }
     .contactContainer .contactCard textarea {
       height: 20vh; }
 
@@ -453,6 +456,9 @@
       text-align: center; }
   .aside-blocks .aside__block-content {
     margin: 20px; }
+    @media only screen and (max-width: 790px) {
+      .aside-blocks .aside__block-content {
+        margin: 5px; } }
     .aside-blocks .aside__block-content ul {
       list-style: none;
       margin-bottom: 40px; }
@@ -466,6 +472,9 @@
     .aside-blocks .aside__block-content .simple-player {
       margin-top: 25px;
       margin-left: 40px; }
+      @media only screen and (max-width: 790px) {
+        .aside-blocks .aside__block-content .simple-player {
+          margin-left: -3px; } }
   .aside-blocks .aside__block-footer {
     background-color: #8BC53F;
     min-height: 1px; }
