@@ -59,8 +59,7 @@
                             @foreach (var item in this.Model.RoadMapPages)
                             {
                                 <a href="@item.Url" class="btn btn-landing">
-                                    <span class="d-none d-sm-block">@item.Name</span>
-                                    <span class="d-sm-none">@Html.Raw(item.PageIcon)</span>
+                                    <span class="">@item.Name</span>
                                 </a>
                             }
                         </div>

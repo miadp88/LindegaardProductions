@@ -46,8 +46,7 @@
   font-size: 1rem;
   text-align: center;
   font-weight: bolder;
-  margin-top: 100px;
-  line-height: 0; }
+  margin-top: 100px; }
   @media (min-width: 576px) {
     .landing .hero .caption h3 {
       font-size: 1rem;
@@ -102,13 +101,14 @@
   border: 2px solid #8BC53F;
   transition: 0.5s;
   border-radius: 55px;
-  margin: 0 15px; }
+  margin: 0 15px;
+  padding: 2px 8px 2px 8px;
+  width: 7rem; }
   .btn-landing .d-sm-blocl {
     width: fit-content;
     height: fit-content; }
   @media screen and (max-width: 575px) {
     .btn-landing {
-      border: none;
       background-color: transparent; } }
 
 .lgCaption .redMorebtn {
@@ -136,16 +136,6 @@
   margin-top: 40px; }
   .btn-list button, .btn-list a {
     float: left; }
-  .btn-list .fa-music {
-    width: 3rem;
-    height: 3rem;
-    margin: 4px;
-    padding: 0; }
-  .btn-list .fa-sliders-h {
-    width: 3rem;
-    height: 3rem;
-    margin: auto;
-    padding-top: 0; }
 
 .fg-btn {
   width: 100%;
@@ -176,7 +166,7 @@
 @media screen and (min-width: 750px) {
   .btn-landing {
     line-height: 0em;
-    padding: 1em;
+    padding: 12px 2px 17px 2px;
     font-size: 1em; }
     .btn-landing:hover {
       background-color: #8BC53F;
@@ -188,13 +178,13 @@
   .btn-landing {
     font-size: 1.5em;
     width: 10rem;
-    padding: 12px 0 12px 0; } }
+    padding: 12px 2px 17px 2px; } }
 
 @media screen and (min-width: 1000px) {
   .btn-landing {
     font-size: 1.5em;
     width: 10rem;
-    padding: 13px; } }
+    padding: 12px 0 17px 0; } }
 
 @media screen and (min-width: 1200px) {
   .btn-landing {
@@ -204,7 +194,7 @@
 @media screen and (min-width: 1960px) {
   .btn-landing {
     font-size: 1em;
-    padding: 15px; } }
+    padding: 15px 0 15px 0; } }
 
 @media screen and (min-width: 590px) {
   .btn-contact {
