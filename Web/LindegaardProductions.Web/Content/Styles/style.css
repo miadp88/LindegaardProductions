@@ -200,7 +200,7 @@
         text-shadow: 1px 2px 8px black; } }
 
 .contactContainer {
-  z-index: 5;
+  z-index: 4;
   padding-top: 12vh; }
   .contactContainer .contactCard {
     position: relative;
@@ -212,7 +212,7 @@
     color: #aaa;
     box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.5), 0 0 1rem rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    margin: 20px 0; }
+    margin: 20px; }
     .contactContainer .contactCard textarea {
       height: 20vh; }
 
@@ -391,7 +391,8 @@
       height: 100%;
       background-size: cover;
       z-index: -1;
-      transition: opacity 0.45s; }
+      transition: opacity 0.45s;
+      color: #8bc53f; }
   .card-blog .card-title a {
     color: #8bc53f;
     text-decoration: none;
@@ -468,6 +469,8 @@ footer .faButtomWrap {
   height: 100vh;
   width: 100%;
   position: relative; }
+  .hero.height-auto {
+    height: auto; }
   .hero video {
     height: 100%;
     width: 100%;

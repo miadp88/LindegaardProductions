@@ -1,11 +1,15 @@
 /// <reference path="./Helpers/_mixins" />
 /// <reference path="./Helpers/_vars" />
 
-.hero{
-    height:100vh;
-    width:100%;
+.hero {
+    height: 100vh;
+    width: 100%;
     position: relative;
-    video{
+    &.height-auto {
+        height: auto;
+    }
+
+    video {
         height: 100%;
         width: 100%;
         position: absolute;
@@ -13,21 +17,24 @@
         left: 0;
         z-index: 5;
         object-fit: cover;
-        filter: opacity(50%); ;
+        filter: opacity(50%);
     }
-    .caption{
+
+    .caption {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index:10;
-        h1{
-            color:white;
+        z-index: 10;
+
+        h1 {
+            color: white;
             font-size: 8rem;
             text-align: center;
         }
-        h2{
-            color:white;
+
+        h2 {
+            color: white;
             font-size: 5rem;
             text-align: center;
         }
