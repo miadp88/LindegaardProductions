@@ -67,18 +67,6 @@
         font-size: 2em;
         opacity: 0.5;
         z-index: 5000;
-        top: 530%;
-
-        @media (min-width: 576px) {
-            top: 530%;
-        }
-
-        @media (min-width: 768px) {
-            top: 370%;
-        }
-
-        @media (min-width: 1000px) {
-            top: 280%;
-        }
+        top: 200%;   
     }
 }

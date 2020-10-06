@@ -549,16 +549,7 @@ footer .faButtomWrap {
     font-size: 2em;
     opacity: 0.5;
     z-index: 5000;
-    top: 530%; }
-    @media (min-width: 576px) {
-      .scolDownIcon .fa-arrow-circle-down {
-        top: 530%; } }
-    @media (min-width: 768px) {
-      .scolDownIcon .fa-arrow-circle-down {
-        top: 370%; } }
-    @media (min-width: 1000px) {
-      .scolDownIcon .fa-arrow-circle-down {
-        top: 280%; } }
+    top: 200%; }
 
 .umb-grid .grid-section img {
   max-width: 100%; }
