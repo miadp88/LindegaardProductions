@@ -87,7 +87,8 @@
   color: #fff;
   text-transform: capitalize;
   text-decoration: none;
-  border: 2px solid #8bc53f; }
+  border: 2px solid #8bc53f;
+  margin: 10px 0 10px 7px; }
   .btn-primary:hover {
     background-color: #8bc53f;
     border: 2px solid #8bc53f; }
@@ -302,9 +303,11 @@
     padding: 0;
     padding: 1vh; }
     .news .newscard .card-body .card-title {
-      color: white; }
+      color: white;
+      margin: 7px; }
     .news .newscard .card-body .card-text {
-      color: rgba(255, 255, 255, 0.562); }
+      color: rgba(255, 255, 255, 0.562);
+      margin: 7px; }
     .news .newscard .card-body a {
       background-color: #8bc53f;
       color: white;
