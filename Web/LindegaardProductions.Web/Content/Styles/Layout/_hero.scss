@@ -28,10 +28,10 @@
         transform: translate(-50%, -50%);
         z-index: 10;
 
-        @media (min-width: 767px) {
+      /*  @media (max-width: 767px) {
             top: 80%;
             left: 50%;
-        }
+        }*/
 
         h1 {
             color: white;
@@ -45,14 +45,14 @@
             text-align: center;
         }
     }
-
-    .landing {
-        .hero {
-            .caption {
-                .btn-list {
-                    display: flex;
-                    justify-content: center;
-                }
+}
+.landing {
+    .hero {
+        .caption {
+            .btn-list {
+                display: flex;
+                justify-content: center;
             }
         }
     }
+}

@@ -129,6 +129,9 @@
   color: #8BC53F;
   font-weight: bold;
   margin: 20px; }
+  .btn-green:focus, .btn-green:active {
+    outline: none !important;
+    box-shadow: none; }
   .btn-green:hover {
     color: #fff; }
 
@@ -262,6 +265,10 @@
     margin-left: auto;
     font-size: 1.2rem;
     right: 0; }
+    .navbar .collapse .navbar-nav .dropdown {
+      text-align: center; }
+      .navbar .collapse .navbar-nav .dropdown .dropdown-menu .dropdown-item {
+        text-align: center; }
   .navbar .navbar-brand {
     position: relative;
     top: 0;
@@ -377,6 +384,9 @@
       cursor: pointer;
       border: 1px solid rgba(141, 139, 139, 0.39);
       background: transparent; }
+      .card_plain .card_content .card_btn:focus, .card_plain .card_content .card_btn:active {
+        outline: none !important;
+        box-shadow: none; }
     .card_plain .card_content .card_btn:hover {
       background-color: rgba(49, 53, 53, 0.12);
       color: #fff; }
@@ -502,7 +512,11 @@ footer .faButtomWrap {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 10; }
+    z-index: 10;
+    /*  @media (max-width: 767px) {
+            top: 80%;
+            left: 50%;
+        }*/ }
     .hero .caption h1 {
       color: white;
       font-size: 8rem;

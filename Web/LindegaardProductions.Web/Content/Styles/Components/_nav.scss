@@ -7,6 +7,14 @@
             margin-left: auto;
             font-size: 1.2rem;
             right: 0;
+            .dropdown{
+                text-align:center;
+                .dropdown-menu{
+                    .dropdown-item{
+                        text-align:center;
+                    }
+                }
+            }
         }
     }
 
