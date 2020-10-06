@@ -59,95 +59,34 @@
     @media screen and (max-width: 575px) {
         background-color: transparent;
     }
-}
 
-
-
-
-    .lgCaption .redMorebtn {
-        background-color: white;
-    }
-
-    .btn-readmore {
-        background: none;
-        border: none;
-        color: rgb(161, 159, 159);
-        font-size: 1.2rem;
-
-        &:hover {
-            color: white;
-        }
-    }
-.btn-green {
-    display: flex;
-    justify-content: center;
-    font-size: 18px;
-    color: #8BC53F;
-    font-weight: bold;
-    margin: 20px;
-
-    &:focus, &:active {
-        outline: none !important;
-        box-shadow: none;
-    }
-
-    &:hover {
-        color: #fff;
-    }
-}
-.btn-list {
-    margin-top: 40px;
-
-    button, a {
-        float: left;
-    }}
-
-
-
-.fg-btn {
-    width:100%;
-    display: flex;
-    justify-content: center;
-
-    }
-
-    .btn-contact {
-        background-color: #8BC53F;
-        color: white;
-        text-transform: capitalize;
-        text-decoration: none;
-        font-size: 20px;
-        border: 2px solid #8BC53F !important;
-        transition: 0.5s;
-        border-radius: 75px;
-        box-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.363), 0 0 1rem rgba(0, 0, 0, 0.562);
-        padding: .4em;
-
-        .fa-sliders-h {
-            width: 17em;
-            height: 15em;
-            margin: auto;
-
-            .fa {
-                font-weight: 100;
-            }
-        }
-
-        &:hover {
-            background-color: #8BC53F;
-            color: white;
-        }
+    @media screen and (min-width: 752px) {
+        font-size: 1.5em;
+        width: 10rem;
+        padding: 12px 2px 17px 2px;
     }
 
 
 
+    @media screen and (min-width: 1000px) {
+        font-size: 1.5em;
+        width: 10rem;
+        padding: 12px 0 17px 0;
+    }
 
 
+    @media screen and (min-width: 1200px) {
+        font-size: 1.5em;
+        padding: 15px 0 15px 0;
+    }
 
 
+    @media screen and (min-width: 1960px) {
+        font-size: 1em;
+        padding: 15px 0 15px 0;
+    }
 
     @media screen and (min-width: 750px) {
-        .btn-landing {
             line-height: 0em;
             padding: 12px 2px 17px 2px;
             font-size: 1em;
@@ -164,66 +103,116 @@
         }
     }
 
-    @media screen and (min-width: 752px) {
-        .btn-landing {
-            font-size: 1.5em;
-            width: 10rem;
-            padding: 12px 2px 17px 2px;
+
+
+
+
+
+.lgCaption .redMorebtn {
+    background-color: white;
+}
+
+
+
+.btn-green {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    color: #8BC53F;
+    font-weight: bold;
+    margin: 20px;
+
+    &:focus, &:active {
+        outline: none !important;
+        box-shadow: none;
+    }
+
+    &:hover {
+        color: #fff;
+        }
+    }
+.btn-list {
+    margin-top: 40px;
+
+    button, a {
+        float: left;
+    }}
+
+
+
+.fg-btn {
+    width:100%;
+    display: flex;
+    justify-content: center;
+
+    }
+
+.btn-contact {
+    background-color: #8BC53F;
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid #8BC53F !important;
+    transition: 0.5s;
+    border-radius: 75px;
+    box-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.363), 0 0 1rem rgba(0, 0, 0, 0.562);
+    padding: .4em;
+
+    .fa-sliders-h {
+        width: 17em;
+        height: 15em;
+        margin: auto;
+
+        .fa {
+            font-weight: 100;
         }
     }
 
-
-    @media screen and (min-width: 1000px) {
-        .btn-landing {
-            font-size: 1.5em;
-            width: 10rem;
-            padding: 12px 0 17px 0;
-        }
+    &:hover {
+        background-color: #8BC53F;
+        color: white;
     }
 
-    @media screen and (min-width: 1200px) {
-        .btn-landing {
-            font-size: 1.5em;
-            padding: 15px 0 15px 0;
-        }
+    @media screen and (max-width: 575px) {
+        border: 2px solid transparent;
+        width: 3em;
+        height: 3em;
+        margin-top: 1em;
 
-
-    }
-
-    @media screen and (min-width: 1960px) {
-        .btn-landing {
-            font-size: 1em;
-            padding: 15px 0 15px 0;
+        .fa {
+            font-weight: 100;
+            color: #8BC53F;
+            font-size: 6em;
+            text-shadow: 1px 2px 8px rgb(0, 0, 0);
         }
     }
-
-
-    
 
     @media screen and (min-width: 590px) {
-
-        .btn-contact {
             width: 100px;
             height: 50px;
             margin-top: 1em;
         }
     }
 
-    @media screen and (max-width: 575px) {
-        .btn-contact {
-            border: 2px solid transparent;
-            width: 3em;
-            height: 3em;
-            margin-top: 1em;
 
-            .fa {
-                font-weight: 1000;
-                color: #8BC53F;
-                font-size: 6em;
-                text-shadow: 1px 2px 8px rgb(0, 0, 0);
-            }
-        }
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+   
 
     
    
